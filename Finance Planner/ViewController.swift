@@ -120,7 +120,7 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         if(UserDefaults.standard.object(forKey: "password") == nil){
             print("Test")
-            let alert = UIAlertController(title: "Safety", message: "Welcome to Finance Planner enter a at least 4 digit password for your Finance Manager", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Welcome", message: "Please enter a Passwort for your Finance Planner - 4 digits at least", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) in
                 alert.dismiss(animated: true, completion: nil)
             }))
