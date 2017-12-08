@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var pinLabel: UILabel!
     
+    @IBOutlet weak var Button0: UIButton!
     @IBOutlet weak var Button1: UIButton!
     @IBOutlet weak var Button2: UIButton!
     @IBOutlet weak var Button3: UIButton!
@@ -61,6 +62,15 @@ class ViewController: UIViewController {
         pinLabel.text! += "9"
     }
     
+    @IBAction func Button0Touch(_ sender: Any) {
+        pinLabel.text! += "0"
+    }
+    
+    @IBAction func ButtonDelete(_ sender: Any) {
+        if !pinLabel.text!.isEmpty {
+            pinLabel.text!.removeLast()
+        }
+    }
     
     @IBAction func submitButton(_ sender: Any) {
         let pinCode = pinLabel.text
@@ -120,6 +130,7 @@ class ViewController: UIViewController {
     
     //roundButtons modifies the Buttons so they appear smoother
     func roundButtons(){
+        Button0.layer.cornerRadius = 10
         Button1.layer.cornerRadius = 10
         Button2.layer.cornerRadius = 10
         Button3.layer.cornerRadius = 10
