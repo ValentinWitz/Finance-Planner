@@ -8,8 +8,11 @@
 
 import UIKit
 
-class incomeCell: UITableViewCell {
+class customCell: UITableViewCell {
 
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var amountLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

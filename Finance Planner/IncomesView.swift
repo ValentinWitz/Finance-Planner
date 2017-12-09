@@ -130,11 +130,12 @@ class IncomesView: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "customCell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! customCell
         
         let entry = Sections[indexPath.section].entries[indexPath.row]
+        cell.dateLabel?.text =  "\(months[entry.date.month - 1]) \(entry.date.day), \(entry.date.year)"
         let amount = String(format: "%.2f", arguments: [entry.amount])
-        cell.textLabel?.text =  "\(months[entry.date.month - 1]) \(entry.date.day), \(entry.date.year): \(amount) €"
+        cell.amountLabel?.text = "\(amount) €"
         return cell
     }
  
