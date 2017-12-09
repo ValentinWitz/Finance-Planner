@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E43C5A541FDC35CC00DF5863 /* OutcomesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43C5A531FDC35CC00DF5863 /* OutcomesView.swift */; };
+		E43C5A561FDC388A00DF5863 /* NewOutcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43C5A551FDC388A00DF5863 /* NewOutcome.swift */; };
 		E45C8EAE1FD93EB600B6DC5E /* ManagePlanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C8EAD1FD93EB600B6DC5E /* ManagePlanner.swift */; };
 		E45C8EB01FDB481800B6DC5E /* IncomesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C8EAF1FDB481800B6DC5E /* IncomesView.swift */; };
 		E45C8EB21FDB4AF400B6DC5E /* incomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C8EB11FDB4AF400B6DC5E /* incomeCell.swift */; };
@@ -39,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E43C5A4F1FDC34DC00DF5863 /* Finance Planner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Finance Planner-Bridging-Header.h"; sourceTree = "<group>"; };
+		E43C5A531FDC35CC00DF5863 /* OutcomesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutcomesView.swift; sourceTree = "<group>"; };
+		E43C5A551FDC388A00DF5863 /* NewOutcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOutcome.swift; sourceTree = "<group>"; };
 		E45C8EAD1FD93EB600B6DC5E /* ManagePlanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagePlanner.swift; sourceTree = "<group>"; };
 		E45C8EAF1FDB481800B6DC5E /* IncomesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomesView.swift; sourceTree = "<group>"; };
 		E45C8EB11FDB4AF400B6DC5E /* incomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = incomeCell.swift; sourceTree = "<group>"; };
@@ -113,11 +118,14 @@
 				E45C8EAF1FDB481800B6DC5E /* IncomesView.swift */,
 				E45C8EB31FDB508100B6DC5E /* NewIncome.swift */,
 				E45C8EB11FDB4AF400B6DC5E /* incomeCell.swift */,
+				E43C5A531FDC35CC00DF5863 /* OutcomesView.swift */,
+				E43C5A551FDC388A00DF5863 /* NewOutcome.swift */,
 				E4D7B96A1FD8809600C6DDE4 /* Main.storyboard */,
 				E4D7B9701FD8809600C6DDE4 /* Assets.xcassets */,
 				E4D7B9721FD8809600C6DDE4 /* LaunchScreen.storyboard */,
 				E4D7B9751FD8809600C6DDE4 /* Info.plist */,
 				E4D7B96D1FD8809600C6DDE4 /* Finance_Planner.xcdatamodeld */,
+				E43C5A4F1FDC34DC00DF5863 /* Finance Planner-Bridging-Header.h */,
 			);
 			path = "Finance Planner";
 			sourceTree = "<group>";
@@ -208,6 +216,7 @@
 				TargetAttributes = {
 					E4D7B9621FD8809600C6DDE4 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					E4D7B9791FD8809600C6DDE4 = {
@@ -281,6 +290,8 @@
 				E4D7B9691FD8809600C6DDE4 /* ViewController.swift in Sources */,
 				E4D7B9671FD8809600C6DDE4 /* AppDelegate.swift in Sources */,
 				E45C8EAE1FD93EB600B6DC5E /* ManagePlanner.swift in Sources */,
+				E43C5A561FDC388A00DF5863 /* NewOutcome.swift in Sources */,
+				E43C5A541FDC35CC00DF5863 /* OutcomesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3C369TXCZE;
 				INFOPLIST_FILE = "Finance Planner/Info.plist";
@@ -453,6 +465,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jahava.Finance-Planner";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Finance Planner/Finance Planner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,6 +476,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3C369TXCZE;
 				INFOPLIST_FILE = "Finance Planner/Info.plist";
@@ -469,6 +484,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jahava.Finance-Planner";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Finance Planner/Finance Planner-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

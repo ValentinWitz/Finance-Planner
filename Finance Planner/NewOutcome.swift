@@ -1,21 +1,22 @@
 //
-//  NewIncome.swift
+//  NewOutcome.swift
 //  Finance Planner
 //
-//  Created by Valentin Witzeneder on 08.12.17.
+//  Created by Valentin Witzeneder on 09.12.17.
 //  Copyright © 2017 Valentin Witzeneder. All rights reserved.
 //
 
 import UIKit
 import CoreData
 
-class NewIncome: UIViewController, UITextFieldDelegate {
-    
+class NewOutcome: UIViewController {
     
     @IBOutlet weak var eurosTextfield: UITextField!
     @IBOutlet weak var centsTextfield: UITextField!
     @IBOutlet weak var useText: UITextView!
     @IBOutlet weak var datePicker: UIDatePicker!
+    
+    
     
 
     override func viewDidLoad() {
@@ -23,7 +24,7 @@ class NewIncome: UIViewController, UITextFieldDelegate {
         eurosTextfield.keyboardType = .numberPad
         centsTextfield.keyboardType = .numberPad
         centsTextfield.text = "00"
-
+        
         let borderColor : UIColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.0)
         useText.layer.borderWidth = 3
         useText.layer.borderColor = borderColor.cgColor
@@ -31,6 +32,7 @@ class NewIncome: UIViewController, UITextFieldDelegate {
         datePicker.datePickerMode = .date
     }
 
+    
     @IBAction func doneButton(_ sender: Any) {
         if(eurosTextfield.text != "" && centsTextfield.text != "" && useText.text != "") {
             let cents = Double(centsTextfield.text!)!/100
@@ -40,13 +42,13 @@ class NewIncome: UIViewController, UITextFieldDelegate {
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             let context = appDelegate.persistentContainer.viewContext
             
-            let entity = NSEntityDescription.entity(forEntityName: "Incomes", in: context)
+            let entity = NSEntityDescription.entity(forEntityName: "Outcomes", in: context)
             
-            let newIncome = NSManagedObject(entity: entity!, insertInto: context)
+            let newOutcome = NSManagedObject(entity: entity!, insertInto: context)
             
-            newIncome.setValue(useText.text!, forKey: "use")
-            newIncome.setValue(amount, forKey: "amount")
-            newIncome.setValue(datePicker.date, forKey: "date")
+            newOutcome.setValue(useText.text!, forKey: "use")
+            newOutcome.setValue(amount, forKey: "amount")
+            newOutcome.setValue(datePicker.date, forKey: "date")
             
             do {
                 try context.save()
@@ -62,9 +64,9 @@ class NewIncome: UIViewController, UITextFieldDelegate {
                 alert.dismiss(animated: true, completion: nil)
             }))
             self.present(alert, animated: true, completion: nil)
-            }
         }
-
+    }
+    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if (range.length + range.location > centsTextfield.text!.count) {
             
@@ -74,10 +76,6 @@ class NewIncome: UIViewController, UITextFieldDelegate {
         
         return NewLength < 3
     }
-    
-    
-    
-    
     
     
     override func didReceiveMemoryWarning() {
