@@ -10,34 +10,20 @@ import UIKit
 import CoreData
 
 class IncomesView: UITableViewController {
-    
-    var incomes = [Incomes]()
-    
+
+    var entryArray = Array(repeating: [String](), count: 12)
+    var incomes = Array(repeating: [Incomes](), count: 12)
+    var sections = [String]()
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        incomes.removeAll()
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let context = appDelegate.persistentContainer.viewContext
-
-        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Incomes")
-
-        request.returnsObjectsAsFaults = false
-
-        do {
-            let result = try context.fetch(request)
-            for data in result as! [Incomes] {
-                self.incomes.append(data)
-            }
-        } catch {
-            print("Failed fetch")
-        }
+        updateTableView()
         self.tableView.reloadData()
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        sections = ["January", "February", "March", "April", "May", "Juny", "July", "August", "September", "October", "November", "December"]
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,35 +31,58 @@ class IncomesView: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func updateTableView (){
+        incomes.removeAll()
+        incomes = Array(repeating: [Incomes](), count: 12)
+        entryArray.removeAll()
+        entryArray = Array(repeating: [String](), count: 12)
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Incomes")
+        request.returnsObjectsAsFaults = false
+        
+        do {
+            let result = try context.fetch(request)
+            for data in result as! [Incomes] {
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateStyle = .long
+                let date = dateFormatter.string(from: data.date!)
+                let amount = String(format: "%.2f", arguments: [data.amount])
+                let entry = date + ": " + amount + "€"
+                
+                var i = 0
+                for section in sections {
+                    if date.contains(section){
+                        incomes[i].append(data)
+                        entryArray[i].append(entry)
+                    }
+                    i = i + 1
+                }
+            }
+        } catch {
+            print("Failed fetch")
+        }
+    }
+    
     // MARK: - Table view data source
 
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
-//        return 0
-//    }
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 12
+    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return incomes.count
+        return entryArray[section].count
     }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: "customCell")
-        
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .long
-        
-        let date = dateFormatter.string(from: incomes[indexPath.row].date!)
-        let amount = String(format: "%.2f", arguments: [incomes[indexPath.row].amount])
-        
-        cell.textLabel?.text = date + " " + amount + "€"
-        cell.textLabel?.numberOfLines = 0
-        
+        cell.textLabel?.text = entryArray[indexPath.section][indexPath.row]
         return cell
     }
  
-
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -82,7 +91,6 @@ class IncomesView: UITableViewController {
     }
     */
 
-    
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
@@ -90,14 +98,19 @@ class IncomesView: UITableViewController {
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             let context = appDelegate.persistentContainer.viewContext
             
-            let income = self.incomes.remove(at: indexPath.row)
+            let income = self.incomes[indexPath.section].remove(at: indexPath.row)
             context.delete(income)
             appDelegate.saveContext()
+            
+            updateTableView()
             self.tableView.reloadData()
         }
     }
- 
 
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return sections[section]
+    }
+    
     /*
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
