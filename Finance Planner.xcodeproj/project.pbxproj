@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E45C8EAE1FD93EB600B6DC5E /* ManagePlanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C8EAD1FD93EB600B6DC5E /* ManagePlanner.swift */; };
+		E45C8EB01FDB481800B6DC5E /* IncomesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C8EAF1FDB481800B6DC5E /* IncomesView.swift */; };
+		E45C8EB21FDB4AF400B6DC5E /* incomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C8EB11FDB4AF400B6DC5E /* incomeCell.swift */; };
+		E45C8EB41FDB508100B6DC5E /* NewIncome.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C8EB31FDB508100B6DC5E /* NewIncome.swift */; };
 		E4D7B9671FD8809600C6DDE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7B9661FD8809600C6DDE4 /* AppDelegate.swift */; };
 		E4D7B9691FD8809600C6DDE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7B9681FD8809600C6DDE4 /* ViewController.swift */; };
 		E4D7B96C1FD8809600C6DDE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D7B96A1FD8809600C6DDE4 /* Main.storyboard */; };
@@ -37,6 +40,9 @@
 
 /* Begin PBXFileReference section */
 		E45C8EAD1FD93EB600B6DC5E /* ManagePlanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagePlanner.swift; sourceTree = "<group>"; };
+		E45C8EAF1FDB481800B6DC5E /* IncomesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomesView.swift; sourceTree = "<group>"; };
+		E45C8EB11FDB4AF400B6DC5E /* incomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = incomeCell.swift; sourceTree = "<group>"; };
+		E45C8EB31FDB508100B6DC5E /* NewIncome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewIncome.swift; sourceTree = "<group>"; };
 		E4D7B9631FD8809600C6DDE4 /* Finance Planner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Finance Planner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D7B9661FD8809600C6DDE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4D7B9681FD8809600C6DDE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +110,9 @@
 				E4D7B9661FD8809600C6DDE4 /* AppDelegate.swift */,
 				E4D7B9681FD8809600C6DDE4 /* ViewController.swift */,
 				E45C8EAD1FD93EB600B6DC5E /* ManagePlanner.swift */,
+				E45C8EAF1FDB481800B6DC5E /* IncomesView.swift */,
+				E45C8EB31FDB508100B6DC5E /* NewIncome.swift */,
+				E45C8EB11FDB4AF400B6DC5E /* incomeCell.swift */,
 				E4D7B96A1FD8809600C6DDE4 /* Main.storyboard */,
 				E4D7B9701FD8809600C6DDE4 /* Assets.xcassets */,
 				E4D7B9721FD8809600C6DDE4 /* LaunchScreen.storyboard */,
@@ -265,7 +274,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E45C8EB41FDB508100B6DC5E /* NewIncome.swift in Sources */,
 				E4D7B96F1FD8809600C6DDE4 /* Finance_Planner.xcdatamodeld in Sources */,
+				E45C8EB01FDB481800B6DC5E /* IncomesView.swift in Sources */,
+				E45C8EB21FDB4AF400B6DC5E /* incomeCell.swift in Sources */,
 				E4D7B9691FD8809600C6DDE4 /* ViewController.swift in Sources */,
 				E4D7B9671FD8809600C6DDE4 /* AppDelegate.swift in Sources */,
 				E45C8EAE1FD93EB600B6DC5E /* ManagePlanner.swift in Sources */,
