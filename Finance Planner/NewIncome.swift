@@ -56,7 +56,7 @@ class NewIncome: UIViewController, UITextFieldDelegate {
             }
         }
             
-        else{
+        else {
             let alert = UIAlertController(title: "ERROR", message: "Insert the amount correctly - every Textfield has to be filled!", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
                 alert.dismiss(animated: true, completion: nil)
@@ -67,18 +67,12 @@ class NewIncome: UIViewController, UITextFieldDelegate {
 
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if (range.length + range.location > centsTextfield.text!.count) {
-            
             return false;
         }
         let NewLength = centsTextfield.text!.count + string.count - range.length
         
         return NewLength < 3
     }
-    
-    
-    
-    
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

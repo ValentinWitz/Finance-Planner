@@ -847,7 +847,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bHv-FY-n4f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2494" y="-862"/>
+            <point key="canvasLocation" x="2493.5999999999999" y="-862.21889055472275"/>
         </scene>
         <!--Add Income-->
         <scene sceneID="zr8-xy-2ED">
@@ -917,6 +917,12 @@
                                 <rect key="frame" x="28" y="424" width="320" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="534465755.38612902">
                                     <!--2017-12-08 22:42:35 +0000-->
+                                </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-31626000">
+                                    <!--1999-12-31 23:00:00 +0000-->
+                                </date>
+                                <date key="maximumDate" timeIntervalSinceReferenceDate="1262300399">
+                                    <!--2040-12-31 22:59:59 +0000-->
                                 </date>
                             </datePicker>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XMy-db-wr3">

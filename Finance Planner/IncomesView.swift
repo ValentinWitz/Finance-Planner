@@ -11,31 +11,44 @@ import CoreData
 
 class IncomesView: UITableViewController {
 
-    var entryArray = Array(repeating: [String](), count: 12)
-    var incomes = Array(repeating: [Incomes](), count: 12)
-    var sections = [String]()
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        updateTableView()
-        self.tableView.reloadData()
+    struct DateStruct {
+        var day: Int
+        var month: Int
+        var year: Int
     }
+    
+    struct EntryStruct {
+        var date: DateStruct
+        var use: String
+        var amount: Double
+        var income: Incomes
+    }
+    
+    struct SectionStruct {
+        var month: Int
+        var year: Int
+        var entries = [EntryStruct]()
+    }
+    
+    var Sections = [SectionStruct]()
+    let months = ["January", "February", "March", "April", "May", "Juny", "July", "August", "September", "October", "November", "December"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        sections = ["January", "February", "March", "April", "May", "Juny", "July", "August", "September", "October", "November", "December"]
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        updateTableView()
+    }
 
     func updateTableView (){
-        incomes.removeAll()
-        incomes = Array(repeating: [Incomes](), count: 12)
-        entryArray.removeAll()
-        entryArray = Array(repeating: [String](), count: 12)
+        Sections.removeAll()
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
@@ -47,39 +60,81 @@ class IncomesView: UITableViewController {
             for data in result as! [Incomes] {
                 let dateFormatter = DateFormatter()
                 dateFormatter.dateStyle = .long
-                let date = dateFormatter.string(from: data.date!)
-                let amount = String(format: "%.2f", arguments: [data.amount])
-                let entry = date + ": " + amount + "€"
+            
+                dateFormatter.dateFormat = "dd"
+                let day = Int(dateFormatter.string(from: data.date!))!
+                dateFormatter.dateFormat = "MM"
+                let month = Int(dateFormatter.string(from: data.date!))!
+                dateFormatter.dateFormat = "yyyy"
+                let year = Int(dateFormatter.string(from: data.date!))!
+                let date = DateStruct(day: day, month: month, year: year)
+                let use = data.use!
+                let amount = data.amount
                 
-                var i = 0
-                for section in sections {
-                    if date.contains(section){
-                        incomes[i].append(data)
-                        entryArray[i].append(entry)
-                    }
-                    i = i + 1
+                if !sectionContains(month: month, year: year) {
+                    Sections.append(SectionStruct(month: month, year: year, entries: [EntryStruct]()))
                 }
+                
+                let entry = EntryStruct(date: date, use: use, amount: amount, income: data)
+                Sections[Sections.endIndex - 1].entries.append(entry)
+                Sections.sort{ (lhs: SectionStruct, rhs: SectionStruct) -> Bool in
+                    if lhs.year != rhs.year {
+                        return lhs.year < rhs.year
+                    } else {
+                        return lhs.month < rhs.month
+                    }
+                }
+                
+                Sections[Sections.endIndex - 1].entries.sort{ (lhs: EntryStruct, rhs: EntryStruct) -> Bool in
+                    if lhs.date.year != rhs.date.year {
+                        return lhs.date.year < rhs.date.year
+                    } else {
+                        if lhs.date.month != rhs.date.month {
+                            return lhs.date.month < rhs.date.month
+                        } else {
+                            if lhs.date.day != rhs.date.day {
+                                return lhs.date.day < rhs.date.day
+                            } else {
+                                return lhs.amount < rhs.amount
+                            }
+                        }
+                    }
+                }
+                
             }
         } catch {
             print("Failed fetch")
         }
+        self.tableView.reloadData()
+    }
+    
+    func sectionContains(month: Int, year: Int) -> Bool {
+        for sec in Sections {
+            if sec.month == month && sec.year == year {
+                return true
+            }
+        }
+        return false
     }
     
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return sections.count
+        return Sections.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return entryArray[section].count
+        return Sections[section].entries.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: "customCell")
-        cell.textLabel?.text = entryArray[indexPath.section][indexPath.row]
+        
+        let entry = Sections[indexPath.section].entries[indexPath.row]
+        let amount = String(format: "%.2f", arguments: [entry.amount])
+        cell.textLabel?.text =  "\(months[entry.date.month - 1]) \(entry.date.day), \(entry.date.year): \(amount) €"
         return cell
     }
  
@@ -98,17 +153,20 @@ class IncomesView: UITableViewController {
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             let context = appDelegate.persistentContainer.viewContext
             
-            let income = self.incomes[indexPath.section].remove(at: indexPath.row)
-            context.delete(income)
-            appDelegate.saveContext()
+            let entry = Sections[indexPath.section].entries[indexPath.row]
+            context.delete(entry.income)
             
+            appDelegate.saveContext()
             updateTableView()
-            self.tableView.reloadData()
         }
     }
 
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return sections[section]
+        let entry = Sections[section].entries
+        if !entry.isEmpty {
+            return "\(months[Sections[section].month - 1]) \(Sections[section].year)"
+        }
+        return nil
     }
     
     /*
