@@ -76,7 +76,9 @@ class IncomesView: UITableViewController {
                 }
                 
                 let entry = EntryStruct(date: date, use: use, amount: amount, income: data)
-                Sections[Sections.endIndex - 1].entries.append(entry)
+                let index = getIndexOfSection(month: entry.date.month, year: entry.date.year)
+                Sections[index].entries.append(entry)
+                
                 Sections.sort{ (lhs: SectionStruct, rhs: SectionStruct) -> Bool in
                     if lhs.year != rhs.year {
                         return lhs.year < rhs.year
@@ -85,7 +87,7 @@ class IncomesView: UITableViewController {
                     }
                 }
                 
-                Sections[Sections.endIndex - 1].entries.sort{ (lhs: EntryStruct, rhs: EntryStruct) -> Bool in
+                Sections[index].entries.sort{ (lhs: EntryStruct, rhs: EntryStruct) -> Bool in
                     if lhs.date.year != rhs.date.year {
                         return lhs.date.year < rhs.date.year
                     } else {
@@ -115,6 +117,17 @@ class IncomesView: UITableViewController {
             }
         }
         return false
+    }
+    
+    func getIndexOfSection(month: Int, year: Int) -> Int{
+        var index = 0
+        for sec in Sections {
+            if sec.month == month && sec.year == year {
+                return index
+            }
+            index = index + 1
+        }
+        return index
     }
     
     // MARK: - Table view data source
