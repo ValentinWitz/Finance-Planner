@@ -181,6 +181,20 @@ class IncomesView: UITableViewController {
         return nil
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let entry = Sections[indexPath.section].entries[indexPath.row]
+        let amount = String(format: "%.2f", arguments: [entry.amount])
+        
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "sbPopUpID") as! PopUpViewController
+        self.addChildViewController(popOverVC)
+        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMove(toParentViewController: self)
+        popOverVC.amountLabel.text? = "\(amount) €"
+        popOverVC.useLabel.text? = entry.use
+        popOverVC.dateLabel.text? = "\(months[entry.date.month - 1]) \(entry.date.day), \(entry.date.year)"
+    }
+    
     /*
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {

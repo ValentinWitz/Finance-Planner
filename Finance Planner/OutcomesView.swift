@@ -181,14 +181,17 @@ class OutcomesView: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        /*let entry = Sections[indexPath.section].entries[indexPath.row]
+        let entry = Sections[indexPath.section].entries[indexPath.row]
         let amount = String(format: "%.2f", arguments: [entry.amount])
-        let msg = "Date: \(months[entry.date.month - 1]) \(entry.date.day), \(entry.date.year)\nUse: \(entry.use)\nAmount: \(amount)€"
-        let alert = UIAlertController(title: "INFO", message: msg, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) in
-            alert.dismiss(animated: true, completion: nil)
-        }))
-        self.present(alert, animated: true, completion: nil)*/
+        
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "sbPopUpID") as! PopUpViewController
+        self.addChildViewController(popOverVC)
+        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMove(toParentViewController: self)
+        popOverVC.amountLabel.text? = "\(amount) €"
+        popOverVC.useLabel.text? = entry.use
+        popOverVC.dateLabel.text? = "\(months[entry.date.month - 1]) \(entry.date.day), \(entry.date.year)"
     }
 
     /*
