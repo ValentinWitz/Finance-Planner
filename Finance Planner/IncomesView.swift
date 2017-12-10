@@ -181,6 +181,17 @@ class IncomesView: UITableViewController {
         return nil
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        /*let entry = Sections[indexPath.section].entries[indexPath.row]
+         let amount = String(format: "%.2f", arguments: [entry.amount])
+         let msg = "Date: \(months[entry.date.month - 1]) \(entry.date.day), \(entry.date.year)\nUse: \(entry.use)\nAmount: \(amount)€"
+         let alert = UIAlertController(title: "INFO", message: msg, preferredStyle: .alert)
+         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) in
+         alert.dismiss(animated: true, completion: nil)
+         }))
+         self.present(alert, animated: true, completion: nil)*/
+    }
+    
     /*
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
