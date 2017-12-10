@@ -91,14 +91,14 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         }
         }
     
-    func setChart(month: Int, year: Int) {
-        incomesChart.delegate = (self as! ChartViewDelegate)
-        var dataEntries: [ChartDataEntry] = []
-        var dataMonths:[String] = []
-        
-        //get the Data from the month/year and display
-        
-    }
+//    func setChart(month: Int, year: Int) {
+//        incomesChart.delegate = (self as! ChartViewDelegate)
+//        var dataEntries: [ChartDataEntry] = []
+//        var dataMonths:[String] = []
+//
+//        //get the Data from the month/year and display
+//
+//    }
     
     
     
@@ -165,7 +165,7 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
             print("Failed fetch")
         }
 
-        setChart(month: selectedMonth, year: selectedYear)
+       // setChart(month: selectedMonth, year: selectedYear)
     }
     
     func sectionContains(month: Int, year: Int) -> Bool {
