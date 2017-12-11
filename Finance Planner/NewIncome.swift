@@ -29,6 +29,7 @@ class NewIncome: UIViewController, UITextFieldDelegate, UITextViewDelegate {
         useText.layer.borderWidth = 3
         useText.layer.borderColor = borderColor.cgColor
         useText.layer.cornerRadius = 5.0
+        
         datePicker.datePickerMode = .date
     }
     
