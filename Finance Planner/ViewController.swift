@@ -82,11 +82,10 @@ class ViewController: UIViewController {
             self.present(alert, animated: true, completion: nil)
             pinLabel.text = ""
         } else {
-            let pinCodeInt:Int? = Int(pinCode!)
             
             let defaults = UserDefaults.standard
-            if let password = defaults.object(forKey: "password") as? Int {
-                if(password == pinCodeInt){
+            if let password = defaults.object(forKey: "password") as? String {
+                if(password == pinCode){
                     self.performSegue(withIdentifier: "showPlanner", sender: self)
                 }
                 else{
@@ -99,7 +98,7 @@ class ViewController: UIViewController {
                 }
             } else {
                 if(!(pinCode == nil || pinCode!.count < 4)) {
-                defaults.set(pinCodeInt, forKey: "password")
+                defaults.set(pinCode, forKey: "password")
                 defaults.synchronize()
                 self.performSegue(withIdentifier: "showPlanner", sender: self)
                 }
