@@ -101,7 +101,7 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         var months = ["January", "February", "March", "April", "May", "Juny", "July", "August", "September", "October", "November", "December"]
         
         var data: Double = 0
-        var currMonth = months[month-1]
+        let currMonth = months[month-1]
         for section in Sections {
             if (section.year == year && section.month == month) {
                 for entry in section.entries {
