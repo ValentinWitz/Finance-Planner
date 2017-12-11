@@ -1054,8 +1054,8 @@
                                 <date key="date" timeIntervalSinceReferenceDate="534465755.38612902">
                                     <!--2017-12-08 22:42:35 +0000-->
                                 </date>
-                                <date key="minimumDate" timeIntervalSinceReferenceDate="-31626000">
-                                    <!--1999-12-31 23:00:00 +0000-->
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="410223600">
+                                    <!--2013-12-31 23:00:00 +0000-->
                                 </date>
                                 <date key="maximumDate" timeIntervalSinceReferenceDate="1262300399">
                                     <!--2040-12-31 22:59:59 +0000-->
