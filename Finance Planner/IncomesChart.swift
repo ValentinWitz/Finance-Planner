@@ -214,8 +214,7 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         incomesChart.chartDescription?.text = ""
         incomesChart.xAxis.valueFormatter = IndexAxisValueFormatter(values: reqMonths)
         incomesChart.xAxis.granularity = 1
-        incomesChart.animate(xAxisDuration: 2.0, yAxisDuration: 2.0)
-        
+        incomesChart.animate(xAxisDuration: 2.0, yAxisDuration: 2.0, easingOption: .easeInBounce)
     }
     
     func getData() {
