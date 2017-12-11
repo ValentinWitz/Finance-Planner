@@ -151,11 +151,9 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         }
     
         var data_m1: Double = 0
-        //var currMonth_m1: String
         let currMonth_m1 = months[month_minus1-1]
         for section in Sections {
             if (section.year == year_minus1 && section.month == month_minus1) {
-                //currMonth_m1 = months[month_minus1-1]
                 for entry in section.entries {
                     data_m1 += entry.amount
                 }
@@ -163,11 +161,9 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         }
         
         var data_m2: Double = 0
-        //var currMonth_m2: String
         let currMonth_m2 = months[month_minus2-1]
         for section in Sections {
             if (section.year == year_minus2 && section.month == month_minus2) {
-                //currMonth_m2 = months[month_minus2-1]
                 for entry in section.entries {
                     data_m2 += entry.amount
                 }
@@ -176,11 +172,9 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
 
         
         var data_p1: Double = 0
-        //var currMonth_p1: String
         let currMonth_p1 = months[month_plus1-1]
         for section in Sections {
             if (section.year == year_plus1 && section.month == month_plus1) {
-                //currMonth_p1 = months[month_plus1-1]
                 for entry in section.entries {
                     data_p1 += entry.amount
                 }
@@ -189,11 +183,9 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
 
         
         var data_p2: Double = 0
-        //var currMonth_p2: String
         let currMonth_p2 = months[month_plus2-1]
         for section in Sections {
             if (section.year == year_plus2 && section.month == month_plus2) {
-                //currMonth_p2 = months[month_plus2-1]
                 for entry in section.entries {
                     data_p2 += entry.amount
                 }

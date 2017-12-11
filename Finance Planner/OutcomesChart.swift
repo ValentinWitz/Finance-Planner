@@ -31,7 +31,7 @@ class OutcomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         var date: DateStruct
         var use: String
         var amount: Double
-        var income: Incomes
+        var outcome: Outcomes
     }
     
     struct SectionStruct {
@@ -149,11 +149,9 @@ class OutcomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         }
         
         var data_m1: Double = 0
-        //var currMonth_m1: String
         let currMonth_m1 = months[month_minus1-1]
         for section in Sections {
             if (section.year == year_minus1 && section.month == month_minus1) {
-                //currMonth_m1 = months[month_minus1-1]
                 for entry in section.entries {
                     data_m1 += entry.amount
                 }
@@ -161,11 +159,9 @@ class OutcomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         }
         
         var data_m2: Double = 0
-        //var currMonth_m2: String
         let currMonth_m2 = months[month_minus2-1]
         for section in Sections {
             if (section.year == year_minus2 && section.month == month_minus2) {
-                //currMonth_m2 = months[month_minus2-1]
                 for entry in section.entries {
                     data_m2 += entry.amount
                 }
@@ -174,11 +170,9 @@ class OutcomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         
         
         var data_p1: Double = 0
-        //var currMonth_p1: String
         let currMonth_p1 = months[month_plus1-1]
         for section in Sections {
             if (section.year == year_plus1 && section.month == month_plus1) {
-                //currMonth_p1 = months[month_plus1-1]
                 for entry in section.entries {
                     data_p1 += entry.amount
                 }
@@ -187,11 +181,9 @@ class OutcomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         
         
         var data_p2: Double = 0
-        //var currMonth_p2: String
         let currMonth_p2 = months[month_plus2-1]
         for section in Sections {
             if (section.year == year_plus2 && section.month == month_plus2) {
-                //currMonth_p2 = months[month_plus2-1]
                 for entry in section.entries {
                     data_p2 += entry.amount
                 }
@@ -206,7 +198,7 @@ class OutcomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         
         
         let reqMonths = [currMonth_m2, currMonth_m1, currMonth, currMonth_p1, currMonth_p2]
-        let chartDataSet = BarChartDataSet(values: dataEntries, label: "Incomes")
+        let chartDataSet = BarChartDataSet(values: dataEntries, label: "Outcomes")
         chartDataSet.colors = [UIColor(red: 255/255, green: 0/255, blue: 0/255, alpha: 1)]
         let chartData = BarChartData(dataSet: chartDataSet)
         outcomesChart.data = chartData
@@ -224,7 +216,7 @@ class OutcomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         
         do {
             let result = try context.fetch(request)
-            for data in result as! [Incomes] {
+            for data in result as! [Outcomes] {
                 let dateFormatter = DateFormatter()
                 dateFormatter.dateStyle = .long
                 
@@ -242,7 +234,7 @@ class OutcomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
                     Sections.append(SectionStruct(month: month, year: year, entries: [EntryStruct]()))
                 }
                 
-                let entry = EntryStruct(date: date, use: use, amount: amount, income: data)
+                let entry = EntryStruct(date: date, use: use, amount: amount, outcome: data)
                 let index = getIndexOfSection(month: entry.date.month, year: entry.date.year)
                 Sections[index].entries.append(entry)
                 
