@@ -149,15 +149,10 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         else{
             year_plus2 = year
         }
-        
-       
-        
-        let yearsChart = [year_minus2, year_minus1, year, year_plus1, year_plus2]
-        let monthsChart = [month_minus2, month_minus1, month, month_plus1, month_plus2]
     
         var data_m1: Double = 0
         //var currMonth_m1: String
-        var currMonth_m1 = months[month_minus1-1]
+        let currMonth_m1 = months[month_minus1-1]
         for section in Sections {
             if (section.year == year_minus1 && section.month == month_minus1) {
                 //currMonth_m1 = months[month_minus1-1]
@@ -169,7 +164,7 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         
         var data_m2: Double = 0
         //var currMonth_m2: String
-        var currMonth_m2 = months[month_minus2-1]
+        let currMonth_m2 = months[month_minus2-1]
         for section in Sections {
             if (section.year == year_minus2 && section.month == month_minus2) {
                 //currMonth_m2 = months[month_minus2-1]
@@ -182,7 +177,7 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         
         var data_p1: Double = 0
         //var currMonth_p1: String
-        var currMonth_p1 = months[month_plus1-1]
+        let currMonth_p1 = months[month_plus1-1]
         for section in Sections {
             if (section.year == year_plus1 && section.month == month_plus1) {
                 //currMonth_p1 = months[month_plus1-1]
@@ -195,7 +190,7 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         
         var data_p2: Double = 0
         //var currMonth_p2: String
-        var currMonth_p2 = months[month_plus2-1]
+        let currMonth_p2 = months[month_plus2-1]
         for section in Sections {
             if (section.year == year_plus2 && section.month == month_plus2) {
                 //currMonth_p2 = months[month_plus2-1]
