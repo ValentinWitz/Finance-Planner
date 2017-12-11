@@ -62,7 +62,6 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
             let year5 = year!-2
             let year6 = year!-3
             
-            
             years = [year6,year5,year4,year!,year1,year2,year3]
             return years[row].description
         }
