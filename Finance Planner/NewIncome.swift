@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class NewIncome: UIViewController, UITextFieldDelegate {
+class NewIncome: UIViewController, UITextFieldDelegate, UITextViewDelegate {
     
     
     @IBOutlet weak var eurosTextfield: UITextField!
@@ -23,6 +23,7 @@ class NewIncome: UIViewController, UITextFieldDelegate {
         eurosTextfield.keyboardType = .numberPad
         centsTextfield.keyboardType = .numberPad
         centsTextfield.text = "00"
+        self.useText.delegate = self
 
         let borderColor : UIColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.0)
         useText.layer.borderWidth = 3
@@ -30,6 +31,13 @@ class NewIncome: UIViewController, UITextFieldDelegate {
         useText.layer.cornerRadius = 5.0
         datePicker.datePickerMode = .date
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+   
+    
 
     @IBAction func doneButton(_ sender: Any) {
         if(eurosTextfield.text != "" && centsTextfield.text != "" && useText.text != "") {
