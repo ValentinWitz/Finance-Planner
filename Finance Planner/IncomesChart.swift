@@ -15,6 +15,7 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
     
     @IBOutlet weak var incomesChart: BarChartView!
     
+    
     @IBOutlet weak var monthPicker: UIPickerView!
     @IBOutlet weak var yearPicker: UIPickerView!
     
@@ -49,7 +50,6 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         super.viewDidLoad()
         Sections.removeAll()
         getData()
-        
         setChart(month: selectedMonth, year: selectedYear)
     }
     
@@ -102,7 +102,7 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         var currMonth: String
         for section in Sections {
             if (section.year == year && section.month == month) {
-                currMonth = months[month]
+                currMonth = months[month-1]
                 for entry in section.entries {
                     data += entry.amount
                 }
@@ -158,7 +158,7 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         var currMonth_m1: String
         for section in Sections {
             if (section.year == year_minus1 && section.month == month_minus1) {
-                currMonth_m1 = months[month_minus1]
+                currMonth_m1 = months[month_minus1-1]
                 for entry in section.entries {
                     data_m1 += entry.amount
                 }
@@ -169,7 +169,7 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         var currMonth_m2: String
         for section in Sections {
             if (section.year == year_minus2 && section.month == month_minus2) {
-                currMonth_m2 = months[month_minus2]
+                currMonth_m2 = months[month_minus2-1]
                 for entry in section.entries {
                     data_m2 += entry.amount
                 }
@@ -181,7 +181,7 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         var currMonth_p1: String
         for section in Sections {
             if (section.year == year_plus1 && section.month == month_plus1) {
-                currMonth_p1 = months[month_plus1]
+                currMonth_p1 = months[month_plus1-1]
                 for entry in section.entries {
                     data_p1 += entry.amount
                 }
@@ -193,26 +193,27 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         var currMonth_p2: String
         for section in Sections {
             if (section.year == year_plus2 && section.month == month_plus2) {
-                currMonth_p2 = months[month_plus2]
+                currMonth_p2 = months[month_plus2-1]
                 for entry in section.entries {
                     data_p2 += entry.amount
                 }
             }
         }
         
-        
-        dataEntries.append(ChartDataEntry(x: 0, y: data_m2))
-        dataEntries.append(ChartDataEntry(x: 1, y: data_m1))
-        dataEntries.append(ChartDataEntry(x: 2, y: data))
-        dataEntries.append(ChartDataEntry(x: 3, y: data_p1))
-        dataEntries.append(ChartDataEntry(x: 4, y: data_p2))
+        dataEntries.append(BarChartDataEntry(x: 0, y: data_m2))
+        dataEntries.append(BarChartDataEntry(x: 1, y: data_m1))
+        dataEntries.append(BarChartDataEntry(x: 2, y: data))
+        dataEntries.append(BarChartDataEntry(x: 3, y: data_p1))
+        dataEntries.append(BarChartDataEntry(x: 4, y: data_p2))
 
-        //var reqMonths = [currMonth_m2, currMonth_m1, currMonth, currMonth_p1, currMonth_p2]
         
-        let chartDataSet = BarChartDataSet(values: dataEntries, label: "Units Sold")
+        //var reqMonths = [currMonth_m2, currMonth_m1, currMonth, currMonth_p1, currMonth_p2]
+        let chartDataSet = BarChartDataSet(values: dataEntries, label: "Incomes")
         let chartData = BarChartData(dataSet: chartDataSet)
         incomesChart.data = chartData
-
+        incomesChart.chartDescription?.text = ""
+        incomesChart.animate(xAxisDuration: 2.0, yAxisDuration: 2.0)
+        
     }
     
     func getData() {
@@ -274,10 +275,6 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
             print("Failed fetch")
         }
     }
-    
-    
-    
-    
     
     
     func sectionContains(month: Int, year: Int) -> Bool {
