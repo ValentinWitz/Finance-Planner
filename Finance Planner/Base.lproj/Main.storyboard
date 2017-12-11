@@ -1120,10 +1120,55 @@
                     <view key="view" contentMode="scaleToFill" id="kZv-kF-Igs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hSZ-4T-2U9">
+                                <rect key="frame" x="188" y="488" width="187" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="187" id="Y4q-8r-vaf"/>
+                                    <constraint firstAttribute="height" constant="130" id="qjC-FL-tev"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="yaq-NV-ZPx" id="Xrd-2N-m4Z"/>
+                                    <outlet property="delegate" destination="yaq-NV-ZPx" id="BV8-Cm-R1o"/>
+                                </connections>
+                            </pickerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQA-rG-7rJ" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="64" width="375" height="400"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="qrm-qK-icB"/>
+                                </constraints>
+                            </view>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v8d-OP-ZLi">
+                                <rect key="frame" x="0.0" y="488" width="187" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="9kf-Zd-TrA"/>
+                                    <constraint firstAttribute="width" constant="187" id="kud-Ko-exj"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="yaq-NV-ZPx" id="3Xg-2d-FVM"/>
+                                    <outlet property="delegate" destination="yaq-NV-ZPx" id="b5r-oj-fTu"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gQA-rG-7rJ" firstAttribute="trailing" secondItem="75z-FR-4R2" secondAttribute="trailing" id="7TC-FL-eaD"/>
+                            <constraint firstItem="gQA-rG-7rJ" firstAttribute="leading" secondItem="75z-FR-4R2" secondAttribute="leading" id="CGH-yT-qbA"/>
+                            <constraint firstItem="v8d-OP-ZLi" firstAttribute="leading" secondItem="75z-FR-4R2" secondAttribute="leading" id="Geb-Dq-Z8y"/>
+                            <constraint firstItem="hSZ-4T-2U9" firstAttribute="trailing" secondItem="75z-FR-4R2" secondAttribute="trailing" id="KPY-w3-MlL"/>
+                            <constraint firstItem="hSZ-4T-2U9" firstAttribute="bottom" secondItem="75z-FR-4R2" secondAttribute="bottom" id="O3H-1C-D0Z"/>
+                            <constraint firstItem="gQA-rG-7rJ" firstAttribute="top" secondItem="75z-FR-4R2" secondAttribute="top" id="c3X-8Y-oZL"/>
+                            <constraint firstItem="v8d-OP-ZLi" firstAttribute="bottom" secondItem="75z-FR-4R2" secondAttribute="bottom" id="hfR-Qr-FgS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="75z-FR-4R2"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Outcomes" id="HjY-SR-1bA"/>
+                    <connections>
+                        <outlet property="monthPicker" destination="v8d-OP-ZLi" id="2uL-Oz-jLg"/>
+                        <outlet property="outcomesChart" destination="gQA-rG-7rJ" id="Mph-fz-dBG"/>
+                        <outlet property="yearPicker" destination="hSZ-4T-2U9" id="MJr-8p-MB1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DpB-vB-Qj0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
