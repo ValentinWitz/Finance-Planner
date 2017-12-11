@@ -1128,8 +1128,8 @@
                                     <constraint firstAttribute="height" constant="130" id="qjC-FL-tev"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="dataSource" destination="yaq-NV-ZPx" id="Xrd-2N-m4Z"/>
-                                    <outlet property="delegate" destination="yaq-NV-ZPx" id="BV8-Cm-R1o"/>
+                                    <outlet property="dataSource" destination="ZeV-Pd-uR0" id="MKd-wX-nhf"/>
+                                    <outlet property="delegate" destination="ZeV-Pd-uR0" id="zdG-mm-fhf"/>
                                 </connections>
                             </pickerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQA-rG-7rJ" customClass="BarChartView" customModule="Charts">
@@ -1146,8 +1146,8 @@
                                     <constraint firstAttribute="width" constant="187" id="kud-Ko-exj"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="dataSource" destination="yaq-NV-ZPx" id="3Xg-2d-FVM"/>
-                                    <outlet property="delegate" destination="yaq-NV-ZPx" id="b5r-oj-fTu"/>
+                                    <outlet property="dataSource" destination="ZeV-Pd-uR0" id="idc-WX-bNm"/>
+                                    <outlet property="delegate" destination="ZeV-Pd-uR0" id="mYx-vb-JRU"/>
                                 </connections>
                             </pickerView>
                         </subviews>
