@@ -200,6 +200,7 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
             }
         }
         
+        
         dataEntries.append(ChartDataEntry(x: 0, y: data_m2))
         dataEntries.append(ChartDataEntry(x: 1, y: data_m1))
         dataEntries.append(ChartDataEntry(x: 2, y: data))
@@ -275,6 +276,10 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
     }
     
     
+    
+    
+    
+    
     func sectionContains(month: Int, year: Int) -> Bool {
         for sec in Sections {
             if sec.month == month && sec.year == year {
@@ -283,9 +288,6 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         }
         return false
     }
-    
-    
-    
     
     func getIndexOfSection(month: Int, year: Int) -> Int{
         var index = 0
