@@ -210,6 +210,7 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         let reqMonths = [currMonth_m2, currMonth_m1, currMonth, currMonth_p1, currMonth_p2]
         let chartDataSet = BarChartDataSet(values: dataEntries, label: "Incomes")
         let chartData = BarChartData(dataSet: chartDataSet)
+        chartDataSet.colors = [UIColor(red: 0/255, green: 255/255, blue: 0/255, alpha: 1)]
         incomesChart.data = chartData
         incomesChart.chartDescription?.text = ""
         incomesChart.xAxis.valueFormatter = IndexAxisValueFormatter(values: reqMonths)
