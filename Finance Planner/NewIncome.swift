@@ -23,7 +23,8 @@ class NewIncome: UIViewController, UITextFieldDelegate, UITextViewDelegate {
         eurosTextfield.keyboardType = .numberPad
         centsTextfield.keyboardType = .numberPad
         centsTextfield.text = "00"
-        
+        self.useText.delegate = self
+
         let borderColor : UIColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.0)
         useText.layer.borderWidth = 3
         useText.layer.borderColor = borderColor.cgColor

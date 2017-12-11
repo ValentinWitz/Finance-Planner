@@ -63,14 +63,8 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
             let components = calendar.dateComponents([.year, .month, .day], from: date)
             
             let year =  components.year
-            let year1 = year!+1
-            let year2 = year!+2
-            let year3 = year!+3
-            let year4 = year!-1
-            let year5 = year!-2
-            let year6 = year!-3
             
-            years = [year6,year5,year4,year!,year1,year2,year3]
+            years = [year!-3,year!-2,year!-1,year!,year!+1,year!+2,year!+3]
             return years[row].description
         }
     }
