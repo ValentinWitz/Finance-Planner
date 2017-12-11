@@ -78,6 +78,7 @@ class BalanceChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         getDataOutcomes()
         
         
+        
         setChart(month: 1, year: year-3)
     }
     
