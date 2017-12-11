@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class NewIncome: UIViewController, UITextFieldDelegate {
+class NewIncome: UIViewController, UITextFieldDelegate, UITextViewDelegate {
     
     
     @IBOutlet weak var eurosTextfield: UITextField!
@@ -31,6 +31,13 @@ class NewIncome: UIViewController, UITextFieldDelegate {
         
         datePicker.datePickerMode = .date
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+   
+    
 
     @IBAction func doneButton(_ sender: Any) {
         if(eurosTextfield.text != "" && centsTextfield.text != "" && useText.text != "") {
