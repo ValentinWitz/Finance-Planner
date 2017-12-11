@@ -84,7 +84,7 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if(pickerView == monthPicker){
-            selectedMonth = Int(months[row])!
+            selectedMonth = row+1
             }
         else{
             selectedYear = Int(years[row])
