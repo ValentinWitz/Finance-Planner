@@ -13,8 +13,8 @@ class ManagePlanner: UIViewController {
     @IBOutlet weak var incomesButton: UIButton!
     @IBOutlet weak var outcomesButton: UIButton!
     @IBOutlet weak var statisticButton: UIButton!
+    @IBOutlet weak var singleMonthButton: UIButton!
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         roundButtons()
@@ -30,6 +30,7 @@ class ManagePlanner: UIViewController {
         incomesButton.layer.cornerRadius = 20
         outcomesButton.layer.cornerRadius = 20
         statisticButton.layer.cornerRadius = 20
+        singleMonthButton.layer.cornerRadius = 20
     }
     
     

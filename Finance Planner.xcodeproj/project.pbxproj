@@ -16,6 +16,7 @@
 		E43D42091FDD489E00CF5595 /* IncomesChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43D42081FDD489E00CF5595 /* IncomesChart.swift */; };
 		E43D420B1FDD48B200CF5595 /* OutcomesChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43D420A1FDD48B200CF5595 /* OutcomesChart.swift */; };
 		E43D420D1FDD48C500CF5595 /* BalanceChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43D420C1FDD48C500CF5595 /* BalanceChart.swift */; };
+		E456E66A1FE27E7A0024F7E3 /* SingleMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456E6691FE27E790024F7E3 /* SingleMonthView.swift */; };
 		E45C8EAE1FD93EB600B6DC5E /* ManagePlanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C8EAD1FD93EB600B6DC5E /* ManagePlanner.swift */; };
 		E45C8EB01FDB481800B6DC5E /* IncomesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C8EAF1FDB481800B6DC5E /* IncomesView.swift */; };
 		E45C8EB21FDB4AF400B6DC5E /* customCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C8EB11FDB4AF400B6DC5E /* customCell.swift */; };
@@ -63,6 +64,7 @@
 		E43D42081FDD489E00CF5595 /* IncomesChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomesChart.swift; sourceTree = "<group>"; };
 		E43D420A1FDD48B200CF5595 /* OutcomesChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutcomesChart.swift; sourceTree = "<group>"; };
 		E43D420C1FDD48C500CF5595 /* BalanceChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceChart.swift; sourceTree = "<group>"; };
+		E456E6691FE27E790024F7E3 /* SingleMonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleMonthView.swift; sourceTree = "<group>"; };
 		E45C8EAD1FD93EB600B6DC5E /* ManagePlanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagePlanner.swift; sourceTree = "<group>"; };
 		E45C8EAF1FDB481800B6DC5E /* IncomesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomesView.swift; sourceTree = "<group>"; };
 		E45C8EB11FDB4AF400B6DC5E /* customCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customCell.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				E43D42081FDD489E00CF5595 /* IncomesChart.swift */,
 				E43D420A1FDD48B200CF5595 /* OutcomesChart.swift */,
 				E43D420C1FDD48C500CF5595 /* BalanceChart.swift */,
+				E456E6691FE27E790024F7E3 /* SingleMonthView.swift */,
 				E4D7B96A1FD8809600C6DDE4 /* Main.storyboard */,
 				E4D7B9701FD8809600C6DDE4 /* Assets.xcassets */,
 				E4D7B9721FD8809600C6DDE4 /* LaunchScreen.storyboard */,
@@ -495,6 +498,7 @@
 				E45C8EB41FDB508100B6DC5E /* NewIncome.swift in Sources */,
 				E43D420D1FDD48C500CF5595 /* BalanceChart.swift in Sources */,
 				E4D7B96F1FD8809600C6DDE4 /* Finance_Planner.xcdatamodeld in Sources */,
+				E456E66A1FE27E7A0024F7E3 /* SingleMonthView.swift in Sources */,
 				E45C8EB01FDB481800B6DC5E /* IncomesView.swift in Sources */,
 				E45C8EB21FDB4AF400B6DC5E /* customCell.swift in Sources */,
 				E4D7B9691FD8809600C6DDE4 /* ViewController.swift in Sources */,
