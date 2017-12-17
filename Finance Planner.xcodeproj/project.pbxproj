@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1AF627590217EB7D5370157A /* Pods_Finance_Planner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 387CBF9121ACED0EE64B2A65 /* Pods_Finance_Planner.framework */; };
 		3F7596C41FDDB9BB0041CF36 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7596C31FDDB9BB0041CF36 /* PopUpViewController.swift */; };
+		3FB18AE91FE6DDCB00AA2057 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB18AE81FE6DDCB00AA2057 /* LoginViewController.swift */; };
 		9D451D41E6FCD01C2CE230C3 /* Pods_Finance_PlannerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D785EF9C4BC84B7091B48DC4 /* Pods_Finance_PlannerTests.framework */; };
 		DEB25BC2DD1F16E962FF6129 /* Pods_Finance_PlannerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7661BC778D4CEF857920BABC /* Pods_Finance_PlannerUITests.framework */; };
 		E43C5A541FDC35CC00DF5863 /* OutcomesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43C5A531FDC35CC00DF5863 /* OutcomesView.swift */; };
@@ -53,6 +54,7 @@
 		340BFB982D070164E01A96C0 /* Pods-Finance PlannerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finance PlannerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Finance PlannerUITests/Pods-Finance PlannerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		387CBF9121ACED0EE64B2A65 /* Pods_Finance_Planner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Finance_Planner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7596C31FDDB9BB0041CF36 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		3FB18AE81FE6DDCB00AA2057 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5D0633B4D7EF886ED43D575B /* Pods-Finance PlannerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finance PlannerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Finance PlannerTests/Pods-Finance PlannerTests.release.xcconfig"; sourceTree = "<group>"; };
 		7661BC778D4CEF857920BABC /* Pods_Finance_PlannerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Finance_PlannerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B73A8C6E85B764C10EB600C5 /* Pods-Finance PlannerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finance PlannerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Finance PlannerUITests/Pods-Finance PlannerUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 			children = (
 				E4D7B9661FD8809600C6DDE4 /* AppDelegate.swift */,
 				E4D7B9681FD8809600C6DDE4 /* ViewController.swift */,
+				3FB18AE81FE6DDCB00AA2057 /* LoginViewController.swift */,
 				E45C8EAD1FD93EB600B6DC5E /* ManagePlanner.swift */,
 				3F7596C31FDDB9BB0041CF36 /* PopUpViewController.swift */,
 				E45C8EB11FDB4AF400B6DC5E /* customCell.swift */,
@@ -460,10 +463,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Finance Planner/Pods-Finance Planner-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/SmileLock/SmileLock.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SmileLock.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -498,6 +503,7 @@
 				E45C8EB41FDB508100B6DC5E /* NewIncome.swift in Sources */,
 				E43D420D1FDD48C500CF5595 /* BalanceChart.swift in Sources */,
 				E4D7B96F1FD8809600C6DDE4 /* Finance_Planner.xcdatamodeld in Sources */,
+				3FB18AE91FE6DDCB00AA2057 /* LoginViewController.swift in Sources */,
 				E456E66A1FE27E7A0024F7E3 /* SingleMonthView.swift in Sources */,
 				E45C8EB01FDB481800B6DC5E /* IncomesView.swift in Sources */,
 				E45C8EB21FDB4AF400B6DC5E /* customCell.swift in Sources */,

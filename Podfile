@@ -8,6 +8,7 @@ target 'Finance Planner' do
   # Pods for Finance Planner
 
 pod 'Charts'
+pod 'SmileLock'
 
   target 'Finance PlannerTests' do
     inherit! :search_paths

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ggk-U7-aFj">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -610,7 +610,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
+            <point key="canvasLocation" x="-934" y="-1046"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="COi-fX-vui">
@@ -1591,6 +1591,67 @@
             </objects>
             <point key="canvasLocation" x="3308" y="798"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="txf-ZJ-IPZ">
+            <objects>
+                <viewController storyboardIdentifier="PasswordLoginViewController" id="ggk-U7-aFj" customClass="LoginViewController" customModule="Finance_Planner" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y7M-sm-cml"/>
+                        <viewControllerLayoutGuide type="bottom" id="LXI-Ho-4Bw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dJN-uy-5Oj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="900"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grey" translatesAutoresizingMaskIntoConstraints="NO" id="u1h-q7-j7z">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="900"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="REG-Go-rHt">
+                                <rect key="frame" x="182" y="427" width="237.5" height="45.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="MNo-Lc-mmI">
+                                        <rect key="frame" x="0.0" y="0.0" width="237.5" height="45.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pnt-X4-dfE">
+                                                <rect key="frame" x="0.0" y="0.0" width="237.5" height="45.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hqS-kb-qtt">
+                                                        <rect key="frame" x="0.0" y="0.0" width="237.5" height="45.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="38"/>
+                                                        <color key="textColor" red="0.33333334329999997" green="0.33333334329999997" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="REG-Go-rHt" secondAttribute="trailing" constant="50" id="4h3-RI-cEq"/>
+                            <constraint firstItem="REG-Go-rHt" firstAttribute="centerX" secondItem="dJN-uy-5Oj" secondAttribute="centerX" id="5fr-Wd-oIT"/>
+                            <constraint firstItem="u1h-q7-j7z" firstAttribute="leading" secondItem="fIO-7S-xyl" secondAttribute="leading" id="6Y7-Qv-BMk"/>
+                            <constraint firstItem="u1h-q7-j7z" firstAttribute="trailing" secondItem="fIO-7S-xyl" secondAttribute="trailing" id="ENy-Zb-dWz"/>
+                            <constraint firstItem="LXI-Ho-4Bw" firstAttribute="top" secondItem="u1h-q7-j7z" secondAttribute="bottom" id="RKz-SY-vhK"/>
+                            <constraint firstItem="REG-Go-rHt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dJN-uy-5Oj" secondAttribute="leading" constant="50" id="SMV-0f-ubh"/>
+                            <constraint firstItem="u1h-q7-j7z" firstAttribute="top" secondItem="dJN-uy-5Oj" secondAttribute="top" id="Xwh-6T-zX2"/>
+                            <constraint firstItem="REG-Go-rHt" firstAttribute="centerY" secondItem="dJN-uy-5Oj" secondAttribute="centerY" id="Z9h-eL-M7P"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fIO-7S-xyl"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="900"/>
+                    <connections>
+                        <outlet property="passwordStackView" destination="REG-Go-rHt" id="vgI-nB-Bv2"/>
+                        <segue destination="J3f-xE-aCB" kind="show" identifier="loginSuccess" id="Geu-8B-zEa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tg5-0o-RGs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-275" y="33"/>
+        </scene>
     </scenes>
     <resources>
         <image name="balance" width="30" height="30"/>
@@ -1598,4 +1659,7 @@
         <image name="income" width="30" height="30"/>
         <image name="outcome" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Geu-8B-zEa"/>
+    </inferredMetricsTieBreakers>
 </document>
