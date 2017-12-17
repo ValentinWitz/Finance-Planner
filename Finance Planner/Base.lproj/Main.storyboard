@@ -1151,10 +1151,10 @@
                                 </connections>
                             </pickerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQA-rG-7rJ" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="64" width="375" height="400"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="440"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="qrm-qK-icB"/>
+                                    <constraint firstAttribute="height" constant="440" id="qrm-qK-icB"/>
                                 </constraints>
                             </view>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v8d-OP-ZLi">
@@ -1212,10 +1212,10 @@
                                 </connections>
                             </pickerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N1k-IA-WgC" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="64" width="375" height="400"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="440"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="jWN-dt-RVa"/>
+                                    <constraint firstAttribute="height" constant="440" id="jWN-dt-RVa"/>
                                 </constraints>
                             </view>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rwO-3h-jHH">
@@ -1274,10 +1274,10 @@
                                 </connections>
                             </pickerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cOG-Od-Lb7" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="64" width="375" height="400"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="440"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="QKk-YG-fZG"/>
+                                    <constraint firstAttribute="height" constant="440" id="QKk-YG-fZG"/>
                                 </constraints>
                             </view>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gd0-1M-304">
@@ -1355,13 +1355,6 @@
                                     <outlet property="delegate" destination="yA3-BW-e4t" id="Eqb-Oj-JKM"/>
                                 </connections>
                             </pickerView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UfD-DH-fWG" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="64" width="375" height="420"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="420" id="A93-fd-HUf"/>
-                                </constraints>
-                            </view>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e5n-5z-WI9">
                                 <rect key="frame" x="0.0" y="537" width="187" height="130"/>
                                 <constraints>
@@ -1375,21 +1368,28 @@
                                     <outlet property="delegate" destination="yA3-BW-e4t" id="A4W-yQ-uyP"/>
                                 </connections>
                             </pickerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="goj-zt-lXq" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="64" width="375" height="440"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="440" id="eaE-Z5-PbG"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="UfD-DH-fWG" firstAttribute="top" secondItem="JH1-dv-z8F" secondAttribute="top" id="0Gj-Vx-lfD"/>
                             <constraint firstItem="e5n-5z-WI9" firstAttribute="leading" secondItem="JH1-dv-z8F" secondAttribute="leading" id="4p8-Rm-yNc"/>
+                            <constraint firstItem="goj-zt-lXq" firstAttribute="trailing" secondItem="JH1-dv-z8F" secondAttribute="trailing" id="76g-yz-zzV"/>
                             <constraint firstItem="e5n-5z-WI9" firstAttribute="bottom" secondItem="JH1-dv-z8F" secondAttribute="bottom" id="DzU-Oo-pGx"/>
                             <constraint firstItem="FFq-eh-49E" firstAttribute="bottom" secondItem="JH1-dv-z8F" secondAttribute="bottom" id="G6g-WO-XsQ"/>
+                            <constraint firstItem="goj-zt-lXq" firstAttribute="top" secondItem="JH1-dv-z8F" secondAttribute="top" id="QXT-Pm-Pxr"/>
                             <constraint firstItem="FFq-eh-49E" firstAttribute="trailing" secondItem="JH1-dv-z8F" secondAttribute="trailing" id="RxM-zj-zR9"/>
-                            <constraint firstItem="UfD-DH-fWG" firstAttribute="leading" secondItem="JH1-dv-z8F" secondAttribute="leading" id="caS-Gl-BvW"/>
-                            <constraint firstItem="UfD-DH-fWG" firstAttribute="trailing" secondItem="JH1-dv-z8F" secondAttribute="trailing" id="mJ9-Kc-cdQ"/>
+                            <constraint firstItem="goj-zt-lXq" firstAttribute="leading" secondItem="JH1-dv-z8F" secondAttribute="leading" id="S4K-nw-v2S"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JH1-dv-z8F"/>
                     </view>
                     <connections>
-                        <outlet property="chartView" destination="UfD-DH-fWG" id="ouc-Cw-lh2"/>
+                        <outlet property="chartView" destination="goj-zt-lXq" id="DZ8-ky-R5y"/>
                         <outlet property="monthPicker" destination="e5n-5z-WI9" id="url-px-ywI"/>
                         <outlet property="yearPicker" destination="FFq-eh-49E" id="Kok-hq-Z6j"/>
                     </connections>
