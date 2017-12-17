@@ -776,6 +776,7 @@
                         <viewLayoutGuide key="safeArea" id="0a5-PX-hLG"/>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="k51-YZ-Jai"/>
                                 <exclude reference="48Z-v6-Nic"/>
                                 <exclude reference="4AO-ho-zUU"/>
                                 <exclude reference="NZa-8H-3aT"/>
@@ -783,7 +784,6 @@
                                 <exclude reference="g1Z-Mk-Vb5"/>
                                 <exclude reference="jEr-9g-Et4"/>
                                 <exclude reference="nLu-AJ-PE7"/>
-                                <exclude reference="k51-YZ-Jai"/>
                                 <exclude reference="C8a-pZ-9vw"/>
                                 <exclude reference="fFW-zh-BSd"/>
                                 <exclude reference="Y0p-8u-G8R"/>
@@ -794,10 +794,10 @@
                         </variation>
                         <variation key="heightClass=compact">
                             <mask key="constraints">
+                                <include reference="k51-YZ-Jai"/>
                                 <include reference="SgW-WV-2qp"/>
                                 <include reference="g1Z-Mk-Vb5"/>
                                 <include reference="nLu-AJ-PE7"/>
-                                <include reference="k51-YZ-Jai"/>
                                 <include reference="C8a-pZ-9vw"/>
                                 <exclude reference="PUu-QW-xzG"/>
                                 <exclude reference="dxb-1f-f9j"/>
