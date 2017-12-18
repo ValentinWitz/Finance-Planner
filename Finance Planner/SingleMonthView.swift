@@ -65,14 +65,21 @@ class SingleMonthView: UIViewController, UIPickerViewDataSource, UIPickerViewDel
         let components = calendar.dateComponents([.year, .month, .day], from: date)
         
         let year =  components.year!
+        let month = components.month!
+        
+        selectedYear = year
+        selectedMonth = month
         
         years = [year-3,year-2,year-1,year,year+1,year+2,year+3]
+        
+        monthPicker.selectRow(month-1, inComponent: 0, animated: false)
+        yearPicker.selectRow(3, inComponent: 0, animated: false)
         
         Outcomes.removeAll()
         Incomes.removeAll()
         getDataIncomes()
         getDataOutcomes()
-        setChart(month: 1, year: year-3)
+        setChart(month: month, year: year)
         
     }
     
