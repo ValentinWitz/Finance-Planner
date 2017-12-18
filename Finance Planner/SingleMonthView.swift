@@ -112,6 +112,7 @@ class SingleMonthView: UIViewController, UIPickerViewDataSource, UIPickerViewDel
         
         let descriptions = ["Incomes", "Outcomes", "Balance"]
         let chartDataSet = BarChartDataSet(values: dataEntries, label: "Single Month Overview")
+        //chartDataSet.setColor(<#T##color: NSUIColor##NSUIColor#>)
         let chartData = BarChartData(dataSet: chartDataSet)
         chartView.data = chartData
         chartView.chartDescription?.text = ""
