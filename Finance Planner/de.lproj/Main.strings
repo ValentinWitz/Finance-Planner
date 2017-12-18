@@ -1,7 +1,3 @@
-
-/* Class = "UIButton"; normalTitle = "5"; ObjectID = "0bz-xd-PAj"; */
-"0bz-xd-PAj.normalTitle" = "5";
-
 /* Class = "UINavigationItem"; title = "Add Income"; ObjectID = "0rK-7p-Vhy"; */
 "0rK-7p-Vhy.title" = "Einnahmen hinzufügen";
 
@@ -14,14 +10,8 @@
 /* Class = "UINavigationItem"; title = "Add Outcome"; ObjectID = "49a-Wr-fRR"; */
 "49a-Wr-fRR.title" = "Ausgaben hinzufügen";
 
-/* Class = "UIButton"; normalTitle = "4"; ObjectID = "4uO-Jv-ExA"; */
-"4uO-Jv-ExA.normalTitle" = "4";
-
 /* Class = "UINavigationItem"; title = "Incomes"; ObjectID = "5UZ-QI-RUk"; */
 "5UZ-QI-RUk.title" = "Einnahmen";
-
-/* Class = "UIButton"; normalTitle = "7"; ObjectID = "Aka-EC-cRh"; */
-"Aka-EC-cRh.normalTitle" = "7";
 
 /* Class = "UILabel"; text = "Amount:"; ObjectID = "BOP-du-rtB"; */
 "BOP-du-rtB.text" = "Menge:";
@@ -40,9 +30,6 @@
 
 /* Class = "UINavigationItem"; title = "Finance Planner"; ObjectID = "I9d-hd-zBN"; */
 "I9d-hd-zBN.title" = "Finanzplaner";
-
-/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "Ihe-9j-nRL"; */
-"Ihe-9j-nRL.normalTitle" = "Speichern";
 
 /* Class = "UILabel"; text = "0.00 €"; ObjectID = "JI3-Tu-6qs"; */
 "JI3-Tu-6qs.text" = "0.00 €";
@@ -80,12 +67,6 @@
 /* Class = "UILabel"; text = "Details"; ObjectID = "WQk-8B-t94"; */
 "WQk-8B-t94.text" = "Details";
 
-/* Class = "UIButton"; normalTitle = "8"; ObjectID = "X19-z6-s6Z"; */
-"X19-z6-s6Z.normalTitle" = "8";
-
-/* Class = "UIButton"; normalTitle = "0"; ObjectID = "ZTR-Ur-ujr"; */
-"ZTR-Ur-ujr.normalTitle" = "0";
-
 /* Class = "UILabel"; text = "."; ObjectID = "aVc-zj-zBp"; */
 "aVc-zj-zBp.text" = ".";
 
@@ -98,35 +79,17 @@
 /* Class = "UILabel"; text = "Enter Password"; ObjectID = "hqS-kb-qtt"; */
 "hqS-kb-qtt.text" = "Passwort eingeben";
 
-/* Class = "UIButton"; normalTitle = "<"; ObjectID = "iBg-uI-xTF"; */
-"iBg-uI-xTF.normalTitle" = "<";
-
 /* Class = "UILabel"; text = "Use:"; ObjectID = "ijy-wg-oHU"; */
 "ijy-wg-oHU.text" = "Gebrauch:";
 
 /* Class = "UILabel"; text = "UseEntry"; ObjectID = "n8V-KH-KW8"; */
 "n8V-KH-KW8.text" = "UseEntry";
 
-/* Class = "UIButton"; normalTitle = "3"; ObjectID = "nIY-zW-Or4"; */
-"nIY-zW-Or4.normalTitle" = "3";
-
 /* Class = "UILabel"; text = "Label"; ObjectID = "nYb-kQ-Ohs"; */
 "nYb-kQ-Ohs.text" = "Label";
-
-/* Class = "UIButton"; normalTitle = "1"; ObjectID = "onK-vZ-9dZ"; */
-"onK-vZ-9dZ.normalTitle" = "1";
-
-/* Class = "UIButton"; normalTitle = "6"; ObjectID = "pmS-6S-oxo"; */
-"pmS-6S-oxo.normalTitle" = "6";
-
-/* Class = "UIButton"; normalTitle = "2"; ObjectID = "tZ1-60-ywm"; */
-"tZ1-60-ywm.normalTitle" = "2";
 
 /* Class = "UILabel"; text = "Amount:"; ObjectID = "wB2-Rp-xF7"; */
 "wB2-Rp-xF7.text" = "Menge:";
 
 /* Class = "UIViewController"; title = "Incomes"; ObjectID = "yaq-NV-ZPx"; */
 "yaq-NV-ZPx.title" = "Einnahmen";
-
-/* Class = "UIButton"; normalTitle = "9"; ObjectID = "zrw-sy-bVM"; */
-"zrw-sy-bVM.normalTitle" = "9";

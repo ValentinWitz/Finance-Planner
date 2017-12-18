@@ -24,7 +24,6 @@
 		E45C8EB21FDB4AF400B6DC5E /* customCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C8EB11FDB4AF400B6DC5E /* customCell.swift */; };
 		E45C8EB41FDB508100B6DC5E /* NewIncome.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C8EB31FDB508100B6DC5E /* NewIncome.swift */; };
 		E4D7B9671FD8809600C6DDE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7B9661FD8809600C6DDE4 /* AppDelegate.swift */; };
-		E4D7B9691FD8809600C6DDE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7B9681FD8809600C6DDE4 /* ViewController.swift */; };
 		E4D7B96C1FD8809600C6DDE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D7B96A1FD8809600C6DDE4 /* Main.storyboard */; };
 		E4D7B96F1FD8809600C6DDE4 /* Finance_Planner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E4D7B96D1FD8809600C6DDE4 /* Finance_Planner.xcdatamodeld */; };
 		E4D7B9711FD8809600C6DDE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D7B9701FD8809600C6DDE4 /* Assets.xcassets */; };
@@ -78,7 +77,6 @@
 		E45C8EB31FDB508100B6DC5E /* NewIncome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewIncome.swift; sourceTree = "<group>"; };
 		E4D7B9631FD8809600C6DDE4 /* Finance Planner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Finance Planner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D7B9661FD8809600C6DDE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E4D7B9681FD8809600C6DDE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E4D7B96B1FD8809600C6DDE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E4D7B96E1FD8809600C6DDE4 /* Finance_Planner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Finance_Planner.xcdatamodel; sourceTree = "<group>"; };
 		E4D7B9701FD8809600C6DDE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -169,7 +167,6 @@
 			isa = PBXGroup;
 			children = (
 				E4D7B9661FD8809600C6DDE4 /* AppDelegate.swift */,
-				E4D7B9681FD8809600C6DDE4 /* ViewController.swift */,
 				3FB18AE81FE6DDCB00AA2057 /* LoginViewController.swift */,
 				E45C8EAD1FD93EB600B6DC5E /* ManagePlanner.swift */,
 				3F7596C31FDDB9BB0041CF36 /* PopUpViewController.swift */,
@@ -515,7 +512,6 @@
 				E456E66A1FE27E7A0024F7E3 /* SingleMonthView.swift in Sources */,
 				E45C8EB01FDB481800B6DC5E /* IncomesView.swift in Sources */,
 				E45C8EB21FDB4AF400B6DC5E /* customCell.swift in Sources */,
-				E4D7B9691FD8809600C6DDE4 /* ViewController.swift in Sources */,
 				E4D7B9671FD8809600C6DDE4 /* AppDelegate.swift in Sources */,
 				3F7596C41FDDB9BB0041CF36 /* PopUpViewController.swift in Sources */,
 				E45C8EAE1FD93EB600B6DC5E /* ManagePlanner.swift in Sources */,
