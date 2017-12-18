@@ -142,9 +142,10 @@ class OutcomesView: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! customCell
         
         let entry = Sections[indexPath.section].entries[indexPath.row]
-        cell.dateLabel?.text =  "\(months[entry.date.month - 1]) \(entry.date.day), \(entry.date.year)"
+        let dateText = String.localizedStringWithFormat(NSLocalizedString(months[entry.date.month - 1], comment: "date"), String(entry.date.day), String(entry.date.year))
+        cell.dateLabel?.text = dateText
         let amount = String(format: "%.2f", arguments: [entry.amount])
-        cell.amountLabel?.text = "\(amount) €"
+        cell.amountLabel?.text = "\(amount) \(NSLocalizedString("currency", comment: "currency"))"
         return cell
     }
  
@@ -175,7 +176,8 @@ class OutcomesView: UITableViewController {
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let entry = Sections[section].entries
         if !entry.isEmpty {
-            return "\(months[Sections[section].month - 1]) \(Sections[section].year)"
+            let sectionText = String.localizedStringWithFormat(NSLocalizedString("\(months[Sections[section].month - 1])Section", comment: "date"), String(Sections[section].year))
+            return sectionText
         }
         return nil
     }
@@ -189,9 +191,10 @@ class OutcomesView: UITableViewController {
         popOverVC.view.frame = self.view.frame
         self.view.addSubview(popOverVC.view)
         popOverVC.didMove(toParentViewController: self)
-        popOverVC.amountLabel.text? = "\(amount) €"
+        popOverVC.amountLabel.text? = "\(amount) \(NSLocalizedString("currency", comment: "currency"))"
         popOverVC.useLabel.text? = entry.use
-        popOverVC.dateLabel.text? = "\(months[entry.date.month - 1]) \(entry.date.day), \(entry.date.year)"
+        let dateText = String.localizedStringWithFormat(NSLocalizedString(months[entry.date.month - 1], comment: "date"), String(entry.date.day), String(entry.date.year))
+        popOverVC.dateLabel.text? = dateText
     }
 
     /*

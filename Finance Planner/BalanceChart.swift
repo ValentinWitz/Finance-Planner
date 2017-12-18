@@ -58,7 +58,18 @@ class BalanceChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
     var Outcomes = [SectionStructOutcome]()
     var Incomes = [SectionStructIncome]()
     
-    let months = ["January", "February", "March", "April", "May", "Juny", "July", "August", "September", "October", "November", "December"]
+    let months = [NSLocalizedString("JanuaryCharts", comment: "month"),
+                  NSLocalizedString("FebruaryCharts", comment: "month"),
+                  NSLocalizedString("MarchCharts", comment: "month"),
+                  NSLocalizedString("AprilCharts", comment: "month"),
+                  NSLocalizedString("MayCharts", comment: "month"),
+                  NSLocalizedString("JunyCharts", comment: "month"),
+                  NSLocalizedString("JulyCharts", comment: "month"),
+                  NSLocalizedString("AugustCharts", comment: "month"),
+                  NSLocalizedString("SeptemberCharts", comment: "month"),
+                  NSLocalizedString("OctoberCharts", comment: "month"),
+                  NSLocalizedString("NovemberCharts", comment: "month"),
+                  NSLocalizedString("DecemberCharts", comment: "month")]
     var years = [Int]()
     
     override func viewDidLoad() {
@@ -77,7 +88,7 @@ class BalanceChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         years = [year-3,year-2,year-1,year,year+1,year+2,year+3]
         
         monthPicker.selectRow(month-1, inComponent: 0, animated: false)
-        yearPicker.selectRow(3, inComponent: 0, animated: false)
+        yearPicker.selectRow(year - 2014, inComponent: 0, animated: false)
         
         Outcomes.removeAll()
         Incomes.removeAll()
@@ -123,7 +134,6 @@ class BalanceChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
     func setChart(month: Int, year: Int) {
         
         var dataEntries: [ChartDataEntry] = []
-        var months = ["January", "February", "March", "April", "May", "Juny", "July", "August", "September", "October", "November", "December"]
         
         var year_minus2: Int
         var month_minus2 = month-2
@@ -263,7 +273,7 @@ class BalanceChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         
         
         let reqMonths = [currMonth_m2, currMonth_m1, currMonth, currMonth_p1, currMonth_p2]
-        let chartDataSet = BarChartDataSet(values: dataEntries, label: "Balance")
+        let chartDataSet = BarChartDataSet(values: dataEntries, label: "Balance in \(NSLocalizedString("currency", comment: "currency"))")
         chartDataSet.colors = [UIColor(red: 100/255, green: 150/255, blue: 5/255, alpha: 1)]
         let chartData = BarChartData(dataSet: chartDataSet)
         balanceChart.data = chartData

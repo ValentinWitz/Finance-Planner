@@ -15,13 +15,11 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
     
     @IBOutlet weak var incomesChart: BarChartView!
     
-    
     @IBOutlet weak var monthPicker: UIPickerView!
     @IBOutlet weak var yearPicker: UIPickerView!
     
     var selectedMonth: Int = 0
     var selectedYear: Int = 0
-    
     
     struct DateStruct {
         var day: Int
@@ -41,11 +39,21 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         var year: Int
         var entries = [EntryStruct]()
     }
-    
+
     var Sections = [SectionStruct]()
-    let months = ["January", "February", "March", "April", "May", "Juny", "July", "August", "September", "October", "November", "December"]
+    let months = [NSLocalizedString("JanuaryCharts", comment: "month"),
+                  NSLocalizedString("FebruaryCharts", comment: "month"),
+                  NSLocalizedString("MarchCharts", comment: "month"),
+                  NSLocalizedString("AprilCharts", comment: "month"),
+                  NSLocalizedString("MayCharts", comment: "month"),
+                  NSLocalizedString("JunyCharts", comment: "month"),
+                  NSLocalizedString("JulyCharts", comment: "month"),
+                  NSLocalizedString("AugustCharts", comment: "month"),
+                  NSLocalizedString("SeptemberCharts", comment: "month"),
+                  NSLocalizedString("OctoberCharts", comment: "month"),
+                  NSLocalizedString("NovemberCharts", comment: "month"),
+                  NSLocalizedString("DecemberCharts", comment: "month")]
     var years = [Int]()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,8 +71,7 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         years = [year-3,year-2,year-1,year,year+1,year+2,year+3]
         
         monthPicker.selectRow(month-1, inComponent: 0, animated: false)
-        yearPicker.selectRow(3, inComponent: 0, animated: false)
-        
+        yearPicker.selectRow(year - 2014, inComponent: 0, animated: false)
         
         Sections.removeAll()
         getData()
@@ -89,7 +96,7 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         if (pickerView == monthPicker){
             return 12
         }
-        else{
+        else {
             return 7
         }
     }
@@ -97,17 +104,15 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if(pickerView == monthPicker){
             selectedMonth = row+1
-            }
-        else{
+        } else {
             selectedYear = Int(years[row])
         }
         setChart(month: selectedMonth, year: selectedYear)
-        }
+    }
     
     func setChart(month: Int, year: Int) {
         
         var dataEntries: [ChartDataEntry] = []
-        var months = ["January", "February", "March", "April", "May", "Juny", "July", "August", "September", "October", "November", "December"]
         
         var data: Double = 0
         let currMonth = months[month-1]
@@ -125,7 +130,7 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
             month_minus2 += 12
             year_minus2 = year-1
         }
-        else{
+        else {
             year_minus2 = year
         }
         
@@ -207,9 +212,8 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         dataEntries.append(BarChartDataEntry(x: 3, y: data_p1))
         dataEntries.append(BarChartDataEntry(x: 4, y: data_p2))
 
-        
         let reqMonths = [currMonth_m2, currMonth_m1, currMonth, currMonth_p1, currMonth_p2]
-        let chartDataSet = BarChartDataSet(values: dataEntries, label: "Incomes")
+        let chartDataSet = BarChartDataSet(values: dataEntries, label: "\(NSLocalizedString("incomes", comment: "chartlabel")) in \(NSLocalizedString("currency", comment: "currency"))")
         let chartData = BarChartData(dataSet: chartDataSet)
         chartDataSet.colors = [UIColor(red: 0/255, green: 255/255, blue: 0/255, alpha: 1)]
         incomesChart.data = chartData
@@ -304,8 +308,6 @@ class IncomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
 
     /*
     // MARK: - Navigation

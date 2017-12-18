@@ -16,8 +16,6 @@ class NewOutcome: UIViewController {
     @IBOutlet weak var useText: UITextView!
     @IBOutlet weak var datePicker: UIDatePicker!
     
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +33,6 @@ class NewOutcome: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
-    
     
     @IBAction func doneButton(_ sender: Any) {
         if(eurosTextfield.text != "" && centsTextfield.text != "" && useText.text != "") {

@@ -1,0 +1,52 @@
+/* 
+  Localizable.strings
+  Finance Planner
+
+  Created by Student on 18.12.17.
+  Copyright © 2017 Valentin Witzeneder. All rights reserved.
+*/
+
+"January"   = "%@. Jänner %@";
+"February"  = "%@. Februar %@";
+"March"     = "%@. März %@";
+"April"     = "%@. April %@";
+"May"       = "%@. Mai %@";
+"Juny"      = "%@. Juni %@";
+"July"      = "%@. Juli %@";
+"August"    = "%@. August %@";
+"September" = "%@. September %@";
+"October"   = "%@. Oktober %@";
+"November"  = "%@. November %@";
+"December"  = "%@. Dezember %@";
+
+"JanuarySection"   = "Jänner %@";
+"FebruarySection"  = "Februar %@";
+"MarchSection"     = "März %@";
+"AprilSection"     = "April %@";
+"MaySection"       = "Mai %@";
+"JunySection"      = "Juni %@";
+"JulySection"      = "Juli %@";
+"AugustSection"    = "August %@";
+"SeptemberSection" = "September %@";
+"OctoberSection"   = "Oktober %@";
+"NovemberSection"  = "November %@";
+"DecemberSection"  = "Dezember %@";
+
+"JanuaryCharts"   = "Jänner";
+"FebruaryCharts"  = "Februar";
+"MarchCharts"     = "März";
+"AprilCharts"     = "April";
+"MayCharts"       = "Mai";
+"JunyCharts"      = "Juni";
+"JulyCharts"      = "Juli";
+"AugustCharts"    = "August";
+"SeptemberCharts" = "September";
+"OctoberCharts"   = "Oktober";
+"NovemberCharts"  = "November";
+"DecemberCharts"  = "Dezember";
+
+"delete" = "Löschen";
+"currency" = "€";
+"incomes" = "Einnahmen";
+"outcomes" = "Ausgaben";
+"monthOverView" = "Einzelner Monat";
