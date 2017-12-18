@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1AF627590217EB7D5370157A /* Pods_Finance_Planner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 387CBF9121ACED0EE64B2A65 /* Pods_Finance_Planner.framework */; };
 		3F7596C41FDDB9BB0041CF36 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7596C31FDDB9BB0041CF36 /* PopUpViewController.swift */; };
+		3F8FD5A71FE83523009513ED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F8FD5A91FE83523009513ED /* Localizable.strings */; };
 		3FB18AE91FE6DDCB00AA2057 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB18AE81FE6DDCB00AA2057 /* LoginViewController.swift */; };
 		9D451D41E6FCD01C2CE230C3 /* Pods_Finance_PlannerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D785EF9C4BC84B7091B48DC4 /* Pods_Finance_PlannerTests.framework */; };
 		DEB25BC2DD1F16E962FF6129 /* Pods_Finance_PlannerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7661BC778D4CEF857920BABC /* Pods_Finance_PlannerUITests.framework */; };
@@ -23,7 +24,6 @@
 		E45C8EB21FDB4AF400B6DC5E /* customCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C8EB11FDB4AF400B6DC5E /* customCell.swift */; };
 		E45C8EB41FDB508100B6DC5E /* NewIncome.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C8EB31FDB508100B6DC5E /* NewIncome.swift */; };
 		E4D7B9671FD8809600C6DDE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7B9661FD8809600C6DDE4 /* AppDelegate.swift */; };
-		E4D7B9691FD8809600C6DDE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7B9681FD8809600C6DDE4 /* ViewController.swift */; };
 		E4D7B96C1FD8809600C6DDE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D7B96A1FD8809600C6DDE4 /* Main.storyboard */; };
 		E4D7B96F1FD8809600C6DDE4 /* Finance_Planner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E4D7B96D1FD8809600C6DDE4 /* Finance_Planner.xcdatamodeld */; };
 		E4D7B9711FD8809600C6DDE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D7B9701FD8809600C6DDE4 /* Assets.xcassets */; };
@@ -54,6 +54,10 @@
 		340BFB982D070164E01A96C0 /* Pods-Finance PlannerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finance PlannerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Finance PlannerUITests/Pods-Finance PlannerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		387CBF9121ACED0EE64B2A65 /* Pods_Finance_Planner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Finance_Planner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7596C31FDDB9BB0041CF36 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		3F8FD59F1FE8326A009513ED /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		3F8FD5A21FE832D4009513ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		3F8FD5A81FE83523009513ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3F8FD5AA1FE83526009513ED /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3FB18AE81FE6DDCB00AA2057 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5D0633B4D7EF886ED43D575B /* Pods-Finance PlannerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finance PlannerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Finance PlannerTests/Pods-Finance PlannerTests.release.xcconfig"; sourceTree = "<group>"; };
 		7661BC778D4CEF857920BABC /* Pods_Finance_PlannerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Finance_PlannerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,7 +77,6 @@
 		E45C8EB31FDB508100B6DC5E /* NewIncome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewIncome.swift; sourceTree = "<group>"; };
 		E4D7B9631FD8809600C6DDE4 /* Finance Planner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Finance Planner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D7B9661FD8809600C6DDE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E4D7B9681FD8809600C6DDE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E4D7B96B1FD8809600C6DDE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E4D7B96E1FD8809600C6DDE4 /* Finance_Planner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Finance_Planner.xcdatamodel; sourceTree = "<group>"; };
 		E4D7B9701FD8809600C6DDE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -164,7 +167,6 @@
 			isa = PBXGroup;
 			children = (
 				E4D7B9661FD8809600C6DDE4 /* AppDelegate.swift */,
-				E4D7B9681FD8809600C6DDE4 /* ViewController.swift */,
 				3FB18AE81FE6DDCB00AA2057 /* LoginViewController.swift */,
 				E45C8EAD1FD93EB600B6DC5E /* ManagePlanner.swift */,
 				3F7596C31FDDB9BB0041CF36 /* PopUpViewController.swift */,
@@ -178,6 +180,7 @@
 				E43D420C1FDD48C500CF5595 /* BalanceChart.swift */,
 				E456E6691FE27E790024F7E3 /* SingleMonthView.swift */,
 				E4D7B96A1FD8809600C6DDE4 /* Main.storyboard */,
+				3F8FD5A91FE83523009513ED /* Localizable.strings */,
 				E4D7B9701FD8809600C6DDE4 /* Assets.xcassets */,
 				E4D7B9721FD8809600C6DDE4 /* LaunchScreen.storyboard */,
 				E4D7B9751FD8809600C6DDE4 /* Info.plist */,
@@ -303,6 +306,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = E4D7B95A1FD8809600C6DDE4;
 			productRefGroup = E4D7B9641FD8809600C6DDE4 /* Products */;
@@ -322,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4D7B9741FD8809600C6DDE4 /* LaunchScreen.storyboard in Resources */,
+				3F8FD5A71FE83523009513ED /* Localizable.strings in Resources */,
 				E4D7B9711FD8809600C6DDE4 /* Assets.xcassets in Resources */,
 				E4D7B96C1FD8809600C6DDE4 /* Main.storyboard in Resources */,
 			);
@@ -507,7 +512,6 @@
 				E456E66A1FE27E7A0024F7E3 /* SingleMonthView.swift in Sources */,
 				E45C8EB01FDB481800B6DC5E /* IncomesView.swift in Sources */,
 				E45C8EB21FDB4AF400B6DC5E /* customCell.swift in Sources */,
-				E4D7B9691FD8809600C6DDE4 /* ViewController.swift in Sources */,
 				E4D7B9671FD8809600C6DDE4 /* AppDelegate.swift in Sources */,
 				3F7596C41FDDB9BB0041CF36 /* PopUpViewController.swift in Sources */,
 				E45C8EAE1FD93EB600B6DC5E /* ManagePlanner.swift in Sources */,
@@ -550,10 +554,21 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		3F8FD5A91FE83523009513ED /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F8FD5A81FE83523009513ED /* en */,
+				3F8FD5AA1FE83526009513ED /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		E4D7B96A1FD8809600C6DDE4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E4D7B96B1FD8809600C6DDE4 /* Base */,
+				3F8FD59F1FE8326A009513ED /* de */,
+				3F8FD5A21FE832D4009513ED /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -573,6 +588,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -630,6 +646,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

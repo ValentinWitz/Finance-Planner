@@ -16,7 +16,18 @@ class SingleMonthView: UIViewController, UIPickerViewDataSource, UIPickerViewDel
     @IBOutlet weak var yearPicker: UIPickerView!
     @IBOutlet weak var chartView: BarChartView!
     
-    let months = ["January", "February", "March", "April", "May", "Juny", "July", "August", "September", "October", "November", "December"]
+    let months = [NSLocalizedString("JanuaryCharts", comment: "month"),
+                  NSLocalizedString("FebruaryCharts", comment: "month"),
+                  NSLocalizedString("MarchCharts", comment: "month"),
+                  NSLocalizedString("AprilCharts", comment: "month"),
+                  NSLocalizedString("MayCharts", comment: "month"),
+                  NSLocalizedString("JunyCharts", comment: "month"),
+                  NSLocalizedString("JulyCharts", comment: "month"),
+                  NSLocalizedString("AugustCharts", comment: "month"),
+                  NSLocalizedString("SeptemberCharts", comment: "month"),
+                  NSLocalizedString("OctoberCharts", comment: "month"),
+                  NSLocalizedString("NovemberCharts", comment: "month"),
+                  NSLocalizedString("DecemberCharts", comment: "month")]
     var years = [Int]()
     
     var selectedMonth: Int = 0
@@ -73,7 +84,7 @@ class SingleMonthView: UIViewController, UIPickerViewDataSource, UIPickerViewDel
         years = [year-3,year-2,year-1,year,year+1,year+2,year+3]
         
         monthPicker.selectRow(month-1, inComponent: 0, animated: false)
-        yearPicker.selectRow(3, inComponent: 0, animated: false)
+        yearPicker.selectRow(year - 2014, inComponent: 0, animated: false)
         
         Outcomes.removeAll()
         Incomes.removeAll()
@@ -119,16 +130,13 @@ class SingleMonthView: UIViewController, UIPickerViewDataSource, UIPickerViewDel
         chartView.xAxis.valueFormatter = IndexAxisValueFormatter(values: descriptions)
         chartView.xAxis.granularity = 1
         chartView.animate(xAxisDuration: 2.0, yAxisDuration: 3.0, easingOption: .easeOutBounce)
-        
-
     }
-   
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        if(pickerView == monthPicker){
+        if (pickerView == monthPicker){
             return months[row]
         }
-        else{
+        else {
             return years[row].description
         }
     }

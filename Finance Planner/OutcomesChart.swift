@@ -41,7 +41,18 @@ class OutcomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     }
     
     var Sections = [SectionStruct]()
-    let months = ["January", "February", "March", "April", "May", "Juny", "July", "August", "September", "October", "November", "December"]
+    let months = [NSLocalizedString("JanuaryCharts", comment: "month"),
+                  NSLocalizedString("FebruaryCharts", comment: "month"),
+                  NSLocalizedString("MarchCharts", comment: "month"),
+                  NSLocalizedString("AprilCharts", comment: "month"),
+                  NSLocalizedString("MayCharts", comment: "month"),
+                  NSLocalizedString("JunyCharts", comment: "month"),
+                  NSLocalizedString("JulyCharts", comment: "month"),
+                  NSLocalizedString("AugustCharts", comment: "month"),
+                  NSLocalizedString("SeptemberCharts", comment: "month"),
+                  NSLocalizedString("OctoberCharts", comment: "month"),
+                  NSLocalizedString("NovemberCharts", comment: "month"),
+                  NSLocalizedString("DecemberCharts", comment: "month")]
     var years = [Int]()
     
     override func viewDidLoad() {
@@ -60,7 +71,7 @@ class OutcomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         years = [year-3,year-2,year-1,year,year+1,year+2,year+3]
         
         monthPicker.selectRow(month-1, inComponent: 0, animated: false)
-        yearPicker.selectRow(3, inComponent: 0, animated: false)
+        yearPicker.selectRow(year - 2014, inComponent: 0, animated: false)
         
         Sections.removeAll()
         getData()
@@ -103,7 +114,6 @@ class OutcomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     func setChart(month: Int, year: Int) {
         
         var dataEntries: [ChartDataEntry] = []
-        var months = ["January", "February", "March", "April", "May", "Juny", "July", "August", "September", "October", "November", "December"]
         
         var data: Double = 0
         let currMonth = months[month-1]
@@ -203,9 +213,8 @@ class OutcomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         dataEntries.append(BarChartDataEntry(x: 3, y: data_p1))
         dataEntries.append(BarChartDataEntry(x: 4, y: data_p2))
         
-        
         let reqMonths = [currMonth_m2, currMonth_m1, currMonth, currMonth_p1, currMonth_p2]
-        let chartDataSet = BarChartDataSet(values: dataEntries, label: "Outcomes")
+        let chartDataSet = BarChartDataSet(values: dataEntries, label: "\(NSLocalizedString("outcomes", comment: "chartlabel")) in \(NSLocalizedString("currency", comment: "currency"))")
         chartDataSet.colors = [UIColor(red: 255/255, green: 0/255, blue: 0/255, alpha: 1)]
         let chartData = BarChartData(dataSet: chartDataSet)
         outcomesChart.data = chartData

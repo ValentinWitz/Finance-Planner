@@ -1,0 +1,95 @@
+/* Class = "UINavigationItem"; title = "Add Income"; ObjectID = "0rK-7p-Vhy"; */
+"0rK-7p-Vhy.title" = "Add Income";
+
+/* Class = "UIButton"; normalTitle = "Close"; ObjectID = "0zb-xX-tqJ"; */
+"0zb-xX-tqJ.normalTitle" = "Close";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "2gb-aD-5LO"; */
+"2gb-aD-5LO.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Add Outcome"; ObjectID = "49a-Wr-fRR"; */
+"49a-Wr-fRR.title" = "Add Outcome";
+
+/* Class = "UINavigationItem"; title = "Incomes"; ObjectID = "5UZ-QI-RUk"; */
+"5UZ-QI-RUk.title" = "Incomes";
+
+/* Class = "UILabel"; text = "Amount:"; ObjectID = "BOP-du-rtB"; */
+"BOP-du-rtB.text" = "Amount:";
+
+/* Class = "UILabel"; text = "Use:"; ObjectID = "BTZ-hW-oyp"; */
+"BTZ-hW-oyp.text" = "Use:";
+
+/* Class = "UINavigationItem"; title = "Outcomes"; ObjectID = "Dch-ux-XFx"; */
+"Dch-ux-XFx.title" = "Outcomes";
+
+/* Class = "UITabBarItem"; title = "Incomes"; ObjectID = "EXO-nf-GWl"; */
+"EXO-nf-GWl.title" = "Incomes";
+
+/* Class = "UITabBarItem"; title = "Outcomes"; ObjectID = "HjY-SR-1bA"; */
+"HjY-SR-1bA.title" = "Outcomes";
+
+/* Class = "UINavigationItem"; title = "Finance Planner"; ObjectID = "I9d-hd-zBN"; */
+"I9d-hd-zBN.title" = "Finance Planner";
+
+/* Class = "UILabel"; text = "0.00 €"; ObjectID = "JI3-Tu-6qs"; */
+"JI3-Tu-6qs.text" = "0.00 $";
+
+/* Class = "UIButton"; normalTitle = "Show statistics"; ObjectID = "LaE-0r-yn2"; */
+"LaE-0r-yn2.normalTitle" = "Show statistics";
+
+/* Class = "UILabel"; text = "Amount:"; ObjectID = "M83-MM-cdI"; */
+"M83-MM-cdI.text" = "Amount:";
+
+/* Class = "UIButton"; normalTitle = "Single month overview"; ObjectID = "NcE-dB-7IT"; */
+"NcE-dB-7IT.normalTitle" = "Single month overview";
+
+/* Class = "UILabel"; text = "Use:"; ObjectID = "OQ4-tf-TQG"; */
+"OQ4-tf-TQG.text" = "Use:";
+
+/* Class = "UIButton"; normalTitle = "Manage outcomes"; ObjectID = "QZd-mE-TsA"; */
+"QZd-mE-TsA.normalTitle" = "Manage outcomes";
+
+/* Class = "UIButton"; normalTitle = "Manage incomes"; ObjectID = "Qp5-oA-FP1"; */
+"Qp5-oA-FP1.normalTitle" = "Manage incomes";
+
+/* Class = "UILabel"; text = "January 1, 2000"; ObjectID = "THS-RX-DTF"; */
+"THS-RX-DTF.text" = "January 1, 2000";
+
+/* Class = "UILabel"; text = "Date:"; ObjectID = "Tjr-lq-3v1"; */
+"Tjr-lq-3v1.text" = "Date:";
+
+/* Class = "UITabBarItem"; title = "Balance"; ObjectID = "UEA-yu-dqf"; */
+"UEA-yu-dqf.title" = "Balance";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "UKI-tf-o44"; */
+"UKI-tf-o44.text" = "Label";
+
+/* Class = "UILabel"; text = "Details"; ObjectID = "WQk-8B-t94"; */
+"WQk-8B-t94.text" = "Details";
+
+/* Class = "UILabel"; text = "."; ObjectID = "aVc-zj-zBp"; */
+"aVc-zj-zBp.text" = ".";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "dKh-wQ-S19"; */
+"dKh-wQ-S19.text" = "Label";
+
+/* Class = "UILabel"; text = "."; ObjectID = "gkj-tv-Crs"; */
+"gkj-tv-Crs.text" = ".";
+
+/* Class = "UILabel"; text = "Enter Password"; ObjectID = "hqS-kb-qtt"; */
+"hqS-kb-qtt.text" = "Enter Password";
+
+/* Class = "UILabel"; text = "Use:"; ObjectID = "ijy-wg-oHU"; */
+"ijy-wg-oHU.text" = "Use:";
+
+/* Class = "UILabel"; text = "UseEntry"; ObjectID = "n8V-KH-KW8"; */
+"n8V-KH-KW8.text" = "UseEntry";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "nYb-kQ-Ohs"; */
+"nYb-kQ-Ohs.text" = "Label";
+
+/* Class = "UILabel"; text = "Amount:"; ObjectID = "wB2-Rp-xF7"; */
+"wB2-Rp-xF7.text" = "Amount:";
+
+/* Class = "UIViewController"; title = "Incomes"; ObjectID = "yaq-NV-ZPx"; */
+"yaq-NV-ZPx.title" = "Incomes";
