@@ -102,7 +102,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LaE-0r-yn2">
                                 <rect key="frame" x="62.5" y="384" width="250" height="50"/>
-                                <color key="backgroundColor" red="0.39683384569394498" green="0.44181492888062213" blue="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.32717499143059492" green="0.39858055191745012" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="H8r-Yc-Hyo"/>
                                     <constraint firstAttribute="height" constant="50" id="Vc4-A2-8g8"/>
@@ -133,7 +133,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NcE-dB-7IT">
                                 <rect key="frame" x="62.5" y="504" width="250" height="50"/>
-                                <color key="backgroundColor" red="0.37170414293637644" green="0.46231512670919761" blue="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.27622737562325139" green="0.34672411902646738" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="hfh-f0-NdH"/>
                                     <constraint firstAttribute="height" constant="50" id="wbl-1D-Omv"/>

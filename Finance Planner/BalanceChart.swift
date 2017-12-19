@@ -274,7 +274,7 @@ class BalanceChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         
         let reqMonths = [currMonth_m2, currMonth_m1, currMonth, currMonth_p1, currMonth_p2]
         let chartDataSet = BarChartDataSet(values: dataEntries, label: "Balance in \(NSLocalizedString("currency", comment: "currency"))")
-        chartDataSet.colors = [UIColor(red: 100/255, green: 150/255, blue: 5/255, alpha: 1)]
+        chartDataSet.colors = [UIColor.cyan]
         let chartData = BarChartData(dataSet: chartDataSet)
         balanceChart.data = chartData
         balanceChart.chartDescription?.text = ""

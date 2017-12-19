@@ -121,10 +121,9 @@ class SingleMonthView: UIViewController, UIPickerViewDataSource, UIPickerViewDel
         dataEntries.append(BarChartDataEntry(x: 1, y: outcomeData))
         dataEntries.append(BarChartDataEntry(x: 2, y: balanceData))
         
-        let descriptions = [NSLocalizedString("incomes", comment: "chartlabel"),
-                            NSLocalizedString("outcomes", comment: "chartlabel"),
-                            "Balance"]
-        let chartDataSet = BarChartDataSet(values: dataEntries, label: "\(NSLocalizedString("monthOverView", comment: "monthoverview")) in \(NSLocalizedString("currency", comment: "currency"))")
+        let descriptions = ["Incomes", "Outcomes", "Balance"]
+        let chartDataSet = BarChartDataSet(values: dataEntries, label: "Single Month Overview")
+        chartDataSet.colors = [UIColor.green,UIColor.red,UIColor.cyan]
         let chartData = BarChartData(dataSet: chartDataSet)
         chartView.data = chartData
         chartView.chartDescription?.text = ""
