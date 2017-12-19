@@ -281,6 +281,7 @@ class BalanceChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         balanceChart.xAxis.valueFormatter = IndexAxisValueFormatter(values: reqMonths)
         balanceChart.xAxis.granularity = 1
         balanceChart.animate(xAxisDuration: 2.0, yAxisDuration: 3.0, easingOption: .easeOutBounce)
+        balanceChart.doubleTapToZoomEnabled = false
     }
     
     func getDataOutcomes() {
