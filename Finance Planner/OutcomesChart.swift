@@ -222,7 +222,6 @@ class OutcomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         outcomesChart.xAxis.valueFormatter = IndexAxisValueFormatter(values: reqMonths)
         outcomesChart.xAxis.granularity = 1
         outcomesChart.animate(xAxisDuration: 2.0, yAxisDuration: 3.0, easingOption: .easeOutBounce)
-        outcomesChart.doubleTapToZoomEnabled = false
     }
     
     func getData() {
