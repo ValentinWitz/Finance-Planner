@@ -13,6 +13,8 @@
 		3FB18AE91FE6DDCB00AA2057 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB18AE81FE6DDCB00AA2057 /* LoginViewController.swift */; };
 		9D451D41E6FCD01C2CE230C3 /* Pods_Finance_PlannerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D785EF9C4BC84B7091B48DC4 /* Pods_Finance_PlannerTests.framework */; };
 		DEB25BC2DD1F16E962FF6129 /* Pods_Finance_PlannerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7661BC778D4CEF857920BABC /* Pods_Finance_PlannerUITests.framework */; };
+		E417FA691FEA9F73003620E1 /* IncomePercentage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E417FA681FEA9F73003620E1 /* IncomePercentage.swift */; };
+		E417FA6B1FEAB17C003620E1 /* OutcomePercentage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E417FA6A1FEAB17C003620E1 /* OutcomePercentage.swift */; };
 		E43C5A541FDC35CC00DF5863 /* OutcomesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43C5A531FDC35CC00DF5863 /* OutcomesView.swift */; };
 		E43C5A561FDC388A00DF5863 /* NewOutcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43C5A551FDC388A00DF5863 /* NewOutcome.swift */; };
 		E43D42091FDD489E00CF5595 /* IncomesChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43D42081FDD489E00CF5595 /* IncomesChart.swift */; };
@@ -65,6 +67,8 @@
 		CCA7D6AADF510FF9A029CBF0 /* Pods-Finance Planner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finance Planner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Finance Planner/Pods-Finance Planner.debug.xcconfig"; sourceTree = "<group>"; };
 		D785EF9C4BC84B7091B48DC4 /* Pods_Finance_PlannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Finance_PlannerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2AEC0CFFD03BBC829E36995 /* Pods-Finance PlannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finance PlannerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Finance PlannerTests/Pods-Finance PlannerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E417FA681FEA9F73003620E1 /* IncomePercentage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomePercentage.swift; sourceTree = "<group>"; };
+		E417FA6A1FEAB17C003620E1 /* OutcomePercentage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutcomePercentage.swift; sourceTree = "<group>"; };
 		E43C5A531FDC35CC00DF5863 /* OutcomesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutcomesView.swift; sourceTree = "<group>"; };
 		E43C5A551FDC388A00DF5863 /* NewOutcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOutcome.swift; sourceTree = "<group>"; };
 		E43D42081FDD489E00CF5595 /* IncomesChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomesChart.swift; sourceTree = "<group>"; };
@@ -179,6 +183,8 @@
 				E43D420A1FDD48B200CF5595 /* OutcomesChart.swift */,
 				E43D420C1FDD48C500CF5595 /* BalanceChart.swift */,
 				E456E6691FE27E790024F7E3 /* SingleMonthView.swift */,
+				E417FA681FEA9F73003620E1 /* IncomePercentage.swift */,
+				E417FA6A1FEAB17C003620E1 /* OutcomePercentage.swift */,
 				E4D7B96A1FD8809600C6DDE4 /* Main.storyboard */,
 				3F8FD5A91FE83523009513ED /* Localizable.strings */,
 				E4D7B9701FD8809600C6DDE4 /* Assets.xcassets */,
@@ -513,9 +519,11 @@
 				E45C8EB01FDB481800B6DC5E /* IncomesView.swift in Sources */,
 				E45C8EB21FDB4AF400B6DC5E /* customCell.swift in Sources */,
 				E4D7B9671FD8809600C6DDE4 /* AppDelegate.swift in Sources */,
+				E417FA691FEA9F73003620E1 /* IncomePercentage.swift in Sources */,
 				3F7596C41FDDB9BB0041CF36 /* PopUpViewController.swift in Sources */,
 				E45C8EAE1FD93EB600B6DC5E /* ManagePlanner.swift in Sources */,
 				E43D42091FDD489E00CF5595 /* IncomesChart.swift in Sources */,
+				E417FA6B1FEAB17C003620E1 /* OutcomePercentage.swift in Sources */,
 				E43C5A561FDC388A00DF5863 /* NewOutcome.swift in Sources */,
 				E43D420B1FDD48B200CF5595 /* OutcomesChart.swift in Sources */,
 				E43C5A541FDC35CC00DF5863 /* OutcomesView.swift in Sources */,

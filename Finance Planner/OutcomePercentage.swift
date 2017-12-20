@@ -1,8 +1,8 @@
 //
-//  OutcomesChart.swift
+//  OutcomePercentage.swift
 //  Finance Planner
 //
-//  Created by Valentin Witzeneder on 10.12.17.
+//  Created by Valentin Witzeneder on 20.12.17.
 //  Copyright © 2017 Valentin Witzeneder. All rights reserved.
 //
 
@@ -10,16 +10,16 @@ import UIKit
 import CoreData
 import Charts
 
-class OutcomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
-
-    @IBOutlet weak var outcomesChart: BarChartView!
+class OutcomePercentage: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+    
+    
+    @IBOutlet weak var outcomesView: PieChartView!
     @IBOutlet weak var monthPicker: UIPickerView!
     @IBOutlet weak var yearPicker: UIPickerView!
     
-    
+
     var selectedMonth: Int = 0
     var selectedYear: Int = 0
-    
     
     struct DateStruct {
         var day: Int
@@ -75,7 +75,7 @@ class OutcomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         
         Sections.removeAll()
         getData()
-        setChart(month: month, year: year)
+        setChart(month: selectedMonth, year: selectedYear)
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
@@ -96,7 +96,7 @@ class OutcomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         if (pickerView == monthPicker){
             return 12
         }
-        else{
+        else {
             return 7
         }
     }
@@ -104,8 +104,7 @@ class OutcomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if(pickerView == monthPicker){
             selectedMonth = row+1
-        }
-        else{
+        } else {
             selectedYear = Int(years[row])
         }
         setChart(month: selectedMonth, year: selectedYear)
@@ -113,7 +112,7 @@ class OutcomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     
     func setChart(month: Int, year: Int) {
         
-        var dataEntries: [ChartDataEntry] = []
+        var dataEntries: [PieChartDataEntry] = []
         
         var data: Double = 0
         let currMonth = months[month-1]
@@ -131,7 +130,7 @@ class OutcomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
             month_minus2 += 12
             year_minus2 = year-1
         }
-        else{
+        else {
             year_minus2 = year
         }
         
@@ -207,21 +206,49 @@ class OutcomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
             }
         }
         
-        dataEntries.append(BarChartDataEntry(x: 0, y: data_m2))
-        dataEntries.append(BarChartDataEntry(x: 1, y: data_m1))
-        dataEntries.append(BarChartDataEntry(x: 2, y: data))
-        dataEntries.append(BarChartDataEntry(x: 3, y: data_p1))
-        dataEntries.append(BarChartDataEntry(x: 4, y: data_p2))
         
+        let allData = data_m2+data_m1+data+data_p1+data_p2
+        data_m2 = (100/allData)*data_m2
+        data_m1 = (100/allData)*data_m1
+        data = (100/allData)*data
+        data_p1 = (100/allData)*data_p1
+        data_p2 = (100/allData)*data_p2
+        
+        
+        let amount = [data_m2, data_m1, data, data_p1, data_p2]
         let reqMonths = [currMonth_m2, currMonth_m1, currMonth, currMonth_p1, currMonth_p2]
-        let chartDataSet = BarChartDataSet(values: dataEntries, label: "\(NSLocalizedString("outcomes", comment: "chartlabel")) in \(NSLocalizedString("currency", comment: "currency"))")
-        chartDataSet.colors = [UIColor(red: 255/255, green: 0/255, blue: 0/255, alpha: 1)]
-        let chartData = BarChartData(dataSet: chartDataSet)
-        outcomesChart.data = chartData
-        outcomesChart.chartDescription?.text = ""
-        outcomesChart.xAxis.valueFormatter = IndexAxisValueFormatter(values: reqMonths)
-        outcomesChart.xAxis.granularity = 1
-        outcomesChart.animate(xAxisDuration: 2.0, yAxisDuration: 3.0, easingOption: .easeOutBounce)
+        
+        var counter = 0
+        for (index, value) in amount.enumerated() {
+            if(value != 0 && !value.isNaN){
+                let entry = PieChartDataEntry()
+                entry.y = value
+                entry.label = reqMonths[index]
+                dataEntries.append(entry)
+                counter = counter+1
+            }
+        }
+        
+        let set = PieChartDataSet( values: dataEntries, label: "")
+        
+        var colors: [UIColor] = []
+        
+        for _ in 0..<amount.count {
+            let red = Double(arc4random_uniform(256))
+            let green = Double(arc4random_uniform(256))
+            let blue = Double(arc4random_uniform(256))
+            let color = UIColor(red: CGFloat(red/255), green: CGFloat(green/255), blue: CGFloat(blue/255), alpha: 1)
+            colors.append(color)
+        }
+        set.colors = colors
+        let pieData = PieChartData(dataSet: set)
+        outcomesView.data = pieData
+        outcomesView.chartDescription?.text = "Outcomes in %"
+        if(counter < 1){
+            outcomesView.chartDescription?.text = "No data avaiable"
+        }
+        outcomesView.animate(xAxisDuration: 2.0, yAxisDuration: 3.0, easingOption: .easeOutQuart)
+        
     }
     
     func getData() {
@@ -310,8 +337,6 @@ class OutcomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         // Dispose of any resources that can be recreated.
     }
     
-    
-    
     /*
      // MARK: - Navigation
      
@@ -323,4 +348,5 @@ class OutcomesChart: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
      */
     
 }
+
 
