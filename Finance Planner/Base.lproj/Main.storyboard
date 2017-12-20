@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ggk-U7-aFj">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,7 +16,7 @@
             <objects>
                 <navigationController id="J3f-xE-aCB" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wyE-Pg-wto">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -32,14 +32,14 @@
             <objects>
                 <viewController id="9pf-c1-ozp" customClass="ManagePlanner" customModule="Finance_Planner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eAr-dF-Mud">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grey" translatesAutoresizingMaskIntoConstraints="NO" id="RA1-HF-C0f">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZd-mE-TsA">
-                                <rect key="frame" x="62.5" y="209" width="250" height="50"/>
+                                <rect key="frame" x="62.666666666666657" y="233" width="249.99999999999997" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.046545039428554702" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="FJ5-LG-mg6"/>
@@ -70,7 +70,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qp5-oA-FP1">
-                                <rect key="frame" x="62.5" y="104" width="250" height="50"/>
+                                <rect key="frame" x="62.666666666666657" y="128" width="249.99999999999997" height="50"/>
                                 <color key="backgroundColor" red="0.098949858958929438" green="0.82271134204815088" blue="0.073180266355171081" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="5is-hF-nF7"/>
@@ -101,7 +101,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LaE-0r-yn2">
-                                <rect key="frame" x="62.5" y="314" width="250" height="50"/>
+                                <rect key="frame" x="62.666666666666657" y="338" width="249.99999999999997" height="50"/>
                                 <color key="backgroundColor" red="0.32717499143059492" green="0.39858055191745012" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="H8r-Yc-Hyo"/>
@@ -132,7 +132,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NcE-dB-7IT">
-                                <rect key="frame" x="62.5" y="419" width="250" height="50"/>
+                                <rect key="frame" x="62.666666666666657" y="443" width="249.99999999999997" height="50"/>
                                 <color key="backgroundColor" red="0.27622737562325139" green="0.34672411902646738" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="hfh-f0-NdH"/>
@@ -147,7 +147,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6x-V0-Jyi">
-                                <rect key="frame" x="62.5" y="524" width="250" height="50"/>
+                                <rect key="frame" x="62.666666666666657" y="548" width="249.99999999999997" height="50"/>
                                 <color key="backgroundColor" red="0.27622737559999999" green="0.346724119" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="Gel-TH-0df"/>
@@ -257,11 +257,11 @@
             <objects>
                 <viewController storyboardIdentifier="sbPopUpID" id="7lX-ip-o1H" customClass="PopUpViewController" customModule="Finance_Planner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cOj-oX-dVj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DjA-fb-WyM">
-                                <rect key="frame" x="52.5" y="173.5" width="270" height="220"/>
+                                <rect key="frame" x="52.666666666666657" y="246" width="270" height="220"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0zb-xX-tqJ">
                                         <rect key="frame" x="8" y="172" width="254" height="40"/>
@@ -356,7 +356,7 @@
             <objects>
                 <tableViewController id="nNE-aW-Ajh" customClass="IncomesView" customModule="Finance_Planner" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="iZ7-bd-MoH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -364,7 +364,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="blQ-Uc-lU3" id="RIN-Su-k0B">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYb-kQ-Ohs">
@@ -427,14 +427,14 @@
             <objects>
                 <viewController id="6sU-Kc-4sp" customClass="NewIncome" customModule="Finance_Planner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Km-2F-gNk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grey" translatesAutoresizingMaskIntoConstraints="NO" id="grm-TI-ZAx">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K6Q-ed-oec">
-                                <rect key="frame" x="189" y="114" width="80" height="30"/>
+                                <rect key="frame" x="189" y="138" width="80" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="5Hk-bE-EZp"/>
                                     <constraint firstAttribute="height" constant="30" id="7Xp-w0-uj7"/>
@@ -444,7 +444,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ei5-DG-cFa">
-                                <rect key="frame" x="285" y="114" width="50" height="30"/>
+                                <rect key="frame" x="285" y="138" width="50" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Ieg-Nz-btj"/>
                                     <constraint firstAttribute="width" constant="50" id="cvq-6W-18U"/>
@@ -457,7 +457,7 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVc-zj-zBp">
-                                <rect key="frame" x="274" y="124" width="10" height="20"/>
+                                <rect key="frame" x="274" y="148" width="10" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="58a-AT-ZgA"/>
                                     <constraint firstAttribute="width" constant="10" id="Z1e-4M-Lnz"/>
@@ -467,7 +467,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOP-du-rtB">
-                                <rect key="frame" x="55" y="114" width="75" height="30"/>
+                                <rect key="frame" x="55" y="138" width="75" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="TO8-f8-O5w"/>
                                     <constraint firstAttribute="width" constant="75" id="YiC-Yw-6NO"/>
@@ -477,7 +477,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="4pX-UK-N6E">
-                                <rect key="frame" x="27.5" y="424" width="320" height="216"/>
+                                <rect key="frame" x="27.666666666666657" y="448" width="320" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="534465755.38612902">
                                     <!--2017-12-08 22:42:35 +0000-->
                                 </date>
@@ -489,7 +489,7 @@
                                 </date>
                             </datePicker>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XMy-db-wr3">
-                                <rect key="frame" x="50" y="224" width="275" height="180"/>
+                                <rect key="frame" x="50" y="248" width="275" height="180"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="Wlt-Zv-d5T"/>
@@ -498,7 +498,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQ4-tf-TQG">
-                                <rect key="frame" x="100" y="174" width="175" height="30"/>
+                                <rect key="frame" x="100" y="198" width="175" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="175" id="Qd4-nc-biP"/>
                                     <constraint firstAttribute="height" constant="30" id="YNb-ad-8JI"/>
@@ -555,11 +555,11 @@
             <objects>
                 <viewController id="ZeV-Pd-uR0" customClass="OutcomesChart" customModule="Finance_Planner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kZv-kF-Igs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hSZ-4T-2U9">
-                                <rect key="frame" x="188" y="488" width="187" height="130"/>
+                                <rect key="frame" x="188" y="599" width="187" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="187" id="Y4q-8r-vaf"/>
                                     <constraint firstAttribute="height" constant="130" id="qjC-FL-tev"/>
@@ -570,14 +570,14 @@
                                 </connections>
                             </pickerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQA-rG-7rJ" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="64" width="375" height="440"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="440"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="440" id="qrm-qK-icB"/>
                                 </constraints>
                             </view>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v8d-OP-ZLi">
-                                <rect key="frame" x="0.0" y="488" width="187" height="130"/>
+                                <rect key="frame" x="0.0" y="599" width="187" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="9kf-Zd-TrA"/>
                                     <constraint firstAttribute="width" constant="187" id="kud-Ko-exj"/>
@@ -616,11 +616,11 @@
             <objects>
                 <viewController id="ZyS-YJ-w91" customClass="BalanceChart" customModule="Finance_Planner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eVT-YW-E1m">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RlL-qh-mgy">
-                                <rect key="frame" x="188" y="488" width="187" height="130"/>
+                                <rect key="frame" x="188" y="599" width="187" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="187" id="8aU-c2-JPl"/>
                                     <constraint firstAttribute="height" constant="130" id="sya-6g-Lwo"/>
@@ -631,14 +631,14 @@
                                 </connections>
                             </pickerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N1k-IA-WgC" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="64" width="375" height="440"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="440"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="440" id="jWN-dt-RVa"/>
                                 </constraints>
                             </view>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rwO-3h-jHH">
-                                <rect key="frame" x="0.0" y="488" width="187" height="130"/>
+                                <rect key="frame" x="0.0" y="599" width="187" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="MsZ-kl-yZ5"/>
                                     <constraint firstAttribute="width" constant="187" id="SN8-NV-vIZ"/>
@@ -678,11 +678,11 @@
             <objects>
                 <viewController title="Incomes" id="yaq-NV-ZPx" customClass="IncomesChart" customModule="Finance_Planner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YsM-ed-HF3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VqI-eE-5TI">
-                                <rect key="frame" x="188" y="488" width="187" height="130"/>
+                                <rect key="frame" x="188" y="599" width="187" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="Pvd-wH-0oy"/>
                                     <constraint firstAttribute="width" constant="187" id="RL0-QV-WAz"/>
@@ -693,14 +693,14 @@
                                 </connections>
                             </pickerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cOG-Od-Lb7" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="64" width="375" height="440"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="440"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="440" id="QKk-YG-fZG"/>
                                 </constraints>
                             </view>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gd0-1M-304">
-                                <rect key="frame" x="0.0" y="488" width="187" height="130"/>
+                                <rect key="frame" x="0.0" y="599" width="187" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="AmM-td-C8S"/>
                                     <constraint firstAttribute="width" constant="187" id="kuz-Cv-cZb"/>
@@ -758,11 +758,11 @@
             <objects>
                 <viewController id="54s-zW-m6p" customClass="OutcomePercentage" customModule="Finance_Planner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e5t-tb-Reo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P7H-cJ-Uwv">
-                                <rect key="frame" x="188" y="488" width="187" height="130"/>
+                                <rect key="frame" x="188" y="599" width="187" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="187" id="6K5-3a-59S"/>
                                     <constraint firstAttribute="width" constant="187" id="PCV-iR-uxw"/>
@@ -775,14 +775,14 @@
                                 </connections>
                             </pickerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Evi-y2-2mp" customClass="PieChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="64" width="375" height="440"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="440"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="440" id="Ck6-RZ-uy6"/>
                                 </constraints>
                             </view>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jkC-H6-sbw">
-                                <rect key="frame" x="0.0" y="488" width="187" height="130"/>
+                                <rect key="frame" x="0.0" y="599" width="187" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="187" id="BRK-yS-tnU"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="187" id="LUR-Vo-GRa"/>
@@ -823,11 +823,11 @@
             <objects>
                 <viewController id="2Bb-26-c72" customClass="IncomePercentage" customModule="Finance_Planner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fva-Ww-I4d">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hzW-hq-gzW">
-                                <rect key="frame" x="188" y="488" width="187" height="130"/>
+                                <rect key="frame" x="188" y="599" width="187" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="Hig-5s-FxN"/>
                                     <constraint firstAttribute="width" constant="187" id="QUU-RZ-pX2"/>
@@ -838,7 +838,7 @@
                                 </connections>
                             </pickerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QYh-4f-KDh" customClass="PieChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="64" width="375" height="440"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="440"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="440" id="BGQ-ft-6mQ"/>
@@ -846,7 +846,7 @@
                                 </constraints>
                             </view>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zqv-nz-XWK">
-                                <rect key="frame" x="0.0" y="488" width="187" height="130"/>
+                                <rect key="frame" x="0.0" y="599" width="187" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="N2x-2O-yqM"/>
                                     <constraint firstAttribute="width" constant="187" id="VIe-QJ-lZa"/>
@@ -903,11 +903,11 @@
             <objects>
                 <viewController id="yA3-BW-e4t" customClass="SingleMonthView" customModule="Finance_Planner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wrj-Fi-08M">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FFq-eh-49E">
-                                <rect key="frame" x="188" y="537" width="187" height="130"/>
+                                <rect key="frame" x="188" y="648" width="187" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="130" id="9zn-34-I1g"/>
                                     <constraint firstAttribute="height" constant="130" id="JMh-R6-LGB"/>
@@ -920,7 +920,7 @@
                                 </connections>
                             </pickerView>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e5n-5z-WI9">
-                                <rect key="frame" x="0.0" y="537" width="187" height="130"/>
+                                <rect key="frame" x="0.0" y="648" width="187" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="3Lf-Ex-CMj"/>
                                     <constraint firstAttribute="width" constant="187" id="BCc-5T-Kdw"/>
@@ -933,7 +933,7 @@
                                 </connections>
                             </pickerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="goj-zt-lXq" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="64" width="375" height="440"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="440"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="440" id="eaE-Z5-PbG"/>
@@ -967,7 +967,7 @@
             <objects>
                 <tableViewController id="z6Y-rV-EhN" customClass="OutcomesView" customModule="Finance_Planner" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="vGu-dQ-Jgg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -975,7 +975,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P77-Zw-aIH" id="Qgx-LQ-2SI">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKI-tf-o44">
@@ -1038,14 +1038,14 @@
             <objects>
                 <viewController id="a1X-xz-4VL" customClass="NewOutcome" customModule="Finance_Planner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V6b-6F-pwx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grey" translatesAutoresizingMaskIntoConstraints="NO" id="Vch-wc-Gyz">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MUX-n3-uhO">
-                                <rect key="frame" x="189" y="114" width="80" height="30"/>
+                                <rect key="frame" x="189" y="138" width="80" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="0bx-jC-vy7"/>
                                     <constraint firstAttribute="height" constant="30" id="1D5-ro-adb"/>
@@ -1055,7 +1055,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dnm-Et-Put">
-                                <rect key="frame" x="285" y="114" width="50" height="30"/>
+                                <rect key="frame" x="285" y="138" width="50" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="exn-ce-2zd"/>
                                     <constraint firstAttribute="width" constant="50" id="xLq-rg-D7B"/>
@@ -1068,7 +1068,7 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkj-tv-Crs">
-                                <rect key="frame" x="274" y="124" width="10" height="20"/>
+                                <rect key="frame" x="274" y="148" width="10" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="e00-O9-Wre"/>
                                     <constraint firstAttribute="width" constant="10" id="vBR-Xi-hNv"/>
@@ -1078,7 +1078,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wB2-Rp-xF7">
-                                <rect key="frame" x="55" y="114" width="75" height="30"/>
+                                <rect key="frame" x="55" y="138" width="75" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="5C7-OU-F54"/>
                                     <constraint firstAttribute="width" constant="75" id="FI3-bY-54h"/>
@@ -1088,13 +1088,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="MQI-QY-3vB">
-                                <rect key="frame" x="27.5" y="424" width="320" height="216"/>
+                                <rect key="frame" x="27.666666666666657" y="448" width="320" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="534465755.38612902">
                                     <!--2017-12-08 22:42:35 +0000-->
                                 </date>
                             </datePicker>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="G4r-b5-UDY">
-                                <rect key="frame" x="50" y="224" width="275" height="180"/>
+                                <rect key="frame" x="50" y="248" width="275" height="180"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="O9k-Mn-SL5"/>
@@ -1103,7 +1103,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTZ-hW-oyp">
-                                <rect key="frame" x="100" y="174" width="175" height="30"/>
+                                <rect key="frame" x="100" y="198" width="175" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="XjQ-oe-9IF"/>
                                     <constraint firstAttribute="width" constant="175" id="p70-S4-bVF"/>
@@ -1168,19 +1168,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grey" translatesAutoresizingMaskIntoConstraints="NO" id="u1h-q7-j7z">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="900"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="866"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="REG-Go-rHt">
-                                <rect key="frame" x="182" y="427" width="237.5" height="45.5"/>
+                                <rect key="frame" x="182" y="427" width="237.66666666666663" height="45.666666666666686"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="MNo-Lc-mmI">
-                                        <rect key="frame" x="0.0" y="0.0" width="237.5" height="45.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="237.66666666666666" height="45.666666666666664"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pnt-X4-dfE">
-                                                <rect key="frame" x="0.0" y="0.0" width="237.5" height="45.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="237.66666666666666" height="45.666666666666664"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hqS-kb-qtt">
-                                                        <rect key="frame" x="0.0" y="0.0" width="237.5" height="45.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="237.66666666666666" height="45.666666666666664"/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="38"/>
                                                         <color key="textColor" red="0.33333334329999997" green="0.33333334329999997" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
