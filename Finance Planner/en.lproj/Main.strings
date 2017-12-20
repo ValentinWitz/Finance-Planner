@@ -93,3 +93,6 @@
 
 /* Class = "UIViewController"; title = "Incomes"; ObjectID = "yaq-NV-ZPx"; */
 "yaq-NV-ZPx.title" = "Incomes";
+
+/* Class = "UIButton"; normalTitle = "Percentage overview"; ObjectID = "C6x-V0-Jyi"; */
+"C6x-V0-Jyi.normalTitle" = "Percentage overview";

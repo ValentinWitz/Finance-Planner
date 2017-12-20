@@ -56,7 +56,7 @@
 		340BFB982D070164E01A96C0 /* Pods-Finance PlannerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finance PlannerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Finance PlannerUITests/Pods-Finance PlannerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		387CBF9121ACED0EE64B2A65 /* Pods_Finance_Planner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Finance_Planner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7596C31FDDB9BB0041CF36 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
-		3F8FD59F1FE8326A009513ED /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		3F832F581FEAC7500017ADE5 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		3F8FD5A21FE832D4009513ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		3F8FD5A81FE83523009513ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3F8FD5AA1FE83526009513ED /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -607,8 +607,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				E4D7B96B1FD8809600C6DDE4 /* Base */,
-				3F8FD59F1FE8326A009513ED /* de */,
 				3F8FD5A21FE832D4009513ED /* en */,
+				3F832F581FEAC7500017ADE5 /* de */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
