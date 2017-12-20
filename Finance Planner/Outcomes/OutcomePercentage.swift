@@ -229,7 +229,7 @@ class OutcomePercentage: UIViewController, UIPickerViewDataSource, UIPickerViewD
             }
         }
         
-        let set = PieChartDataSet( values: dataEntries, label: "")
+        let set = PieChartDataSet(values: dataEntries, label: "")
         
         var colors: [UIColor] = []
         
@@ -243,7 +243,7 @@ class OutcomePercentage: UIViewController, UIPickerViewDataSource, UIPickerViewD
         set.colors = colors
         let pieData = PieChartData(dataSet: set)
         outcomesView.data = pieData
-        outcomesView.chartDescription?.text = "Outcomes in %"
+        outcomesView.chartDescription?.text = "\(NSLocalizedString("outcomes", comment: "Outcomes")) in %"
         if(counter < 1){
             outcomesView.chartDescription?.text = "No data avaiable"
         }

@@ -1,3 +1,4 @@
+
 /* Class = "UINavigationItem"; title = "Add Income"; ObjectID = "0rK-7p-Vhy"; */
 "0rK-7p-Vhy.title" = "Einnahmen hinzufügen";
 
@@ -54,7 +55,6 @@
 
 /* Class = "UILabel"; text = "January 1, 2000"; ObjectID = "THS-RX-DTF"; */
 "THS-RX-DTF.text" = "1. Jänner 2000";
-
 /* Class = "UILabel"; text = "Date:"; ObjectID = "Tjr-lq-3v1"; */
 "Tjr-lq-3v1.text" = "Datum:";
 
@@ -93,3 +93,6 @@
 
 /* Class = "UIViewController"; title = "Incomes"; ObjectID = "yaq-NV-ZPx"; */
 "yaq-NV-ZPx.title" = "Einnahmen";
+
+/* Class = "UIButton"; normalTitle = "Percentage overview"; ObjectID = "C6x-V0-Jyi"; */
+"C6x-V0-Jyi.normalTitle" = "Übersicht Prozente";

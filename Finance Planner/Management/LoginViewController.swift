@@ -46,6 +46,10 @@ class LoginViewController: UIViewController {
         }
     }
     
+    override open var shouldAutorotate: Bool {
+        return false
+    }
+    
 }
 
 extension LoginViewController: PasswordInputCompleteProtocol {
@@ -85,5 +89,6 @@ private extension LoginViewController {
     func validationFail() {
         passwordContainerView.wrongPassword()
     }
+    
 }
 

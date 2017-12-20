@@ -56,7 +56,7 @@
 		340BFB982D070164E01A96C0 /* Pods-Finance PlannerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finance PlannerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Finance PlannerUITests/Pods-Finance PlannerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		387CBF9121ACED0EE64B2A65 /* Pods_Finance_Planner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Finance_Planner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7596C31FDDB9BB0041CF36 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
-		3F8FD59F1FE8326A009513ED /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		3F832F581FEAC7500017ADE5 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		3F8FD5A21FE832D4009513ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		3F8FD5A81FE83523009513ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3F8FD5AA1FE83526009513ED /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -176,7 +176,7 @@
 			path = Balance;
 			sourceTree = "<group>";
 		};
-		E417FA711FEAC55F003620E1 /* Managment */ = {
+		E417FA711FEAC55F003620E1 /* Management */ = {
 			isa = PBXGroup;
 			children = (
 				E4D7B9661FD8809600C6DDE4 /* AppDelegate.swift */,
@@ -186,7 +186,7 @@
 				E45C8EB11FDB4AF400B6DC5E /* customCell.swift */,
 				3F8FD5A91FE83523009513ED /* Localizable.strings */,
 			);
-			path = Managment;
+			path = Management;
 			sourceTree = "<group>";
 		};
 		E4D7B95A1FD8809600C6DDE4 = {
@@ -218,7 +218,7 @@
 				E4D7B9721FD8809600C6DDE4 /* LaunchScreen.storyboard */,
 				E4D7B9751FD8809600C6DDE4 /* Info.plist */,
 				E4D7B96D1FD8809600C6DDE4 /* Finance_Planner.xcdatamodeld */,
-				E417FA711FEAC55F003620E1 /* Managment */,
+				E417FA711FEAC55F003620E1 /* Management */,
 				E417FA701FEAC51B003620E1 /* Balance */,
 				E417FA6F1FEAC504003620E1 /* Outcomes */,
 				E417FA6E1FEAC4C6003620E1 /* Incomes */,
@@ -607,8 +607,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				E4D7B96B1FD8809600C6DDE4 /* Base */,
-				3F8FD59F1FE8326A009513ED /* de */,
 				3F8FD5A21FE832D4009513ED /* en */,
+				3F832F581FEAC7500017ADE5 /* de */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
