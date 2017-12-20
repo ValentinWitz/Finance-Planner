@@ -242,7 +242,7 @@ class IncomePercentage: UIViewController, UIPickerViewDataSource, UIPickerViewDe
         set.colors = colors
         let pieData = PieChartData(dataSet: set)
         incomesChart.data = pieData
-        incomesChart.chartDescription?.text = "Incomes in %"
+        incomesChart.chartDescription?.text = "\(NSLocalizedString("incomes", comment: "Incomes")) in %"
         if(counter < 1){
             incomesChart.chartDescription?.text = "No data avaiable"
         }

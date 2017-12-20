@@ -176,7 +176,7 @@
 			path = Balance;
 			sourceTree = "<group>";
 		};
-		E417FA711FEAC55F003620E1 /* Managment */ = {
+		E417FA711FEAC55F003620E1 /* Management */ = {
 			isa = PBXGroup;
 			children = (
 				E4D7B9661FD8809600C6DDE4 /* AppDelegate.swift */,
@@ -186,7 +186,7 @@
 				E45C8EB11FDB4AF400B6DC5E /* customCell.swift */,
 				3F8FD5A91FE83523009513ED /* Localizable.strings */,
 			);
-			path = Managment;
+			path = Management;
 			sourceTree = "<group>";
 		};
 		E4D7B95A1FD8809600C6DDE4 = {
@@ -218,7 +218,7 @@
 				E4D7B9721FD8809600C6DDE4 /* LaunchScreen.storyboard */,
 				E4D7B9751FD8809600C6DDE4 /* Info.plist */,
 				E4D7B96D1FD8809600C6DDE4 /* Finance_Planner.xcdatamodeld */,
-				E417FA711FEAC55F003620E1 /* Managment */,
+				E417FA711FEAC55F003620E1 /* Management */,
 				E417FA701FEAC51B003620E1 /* Balance */,
 				E417FA6F1FEAC504003620E1 /* Outcomes */,
 				E417FA6E1FEAC4C6003620E1 /* Incomes */,
