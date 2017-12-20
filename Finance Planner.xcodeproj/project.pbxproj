@@ -145,6 +145,50 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E417FA6E1FEAC4C6003620E1 /* Incomes */ = {
+			isa = PBXGroup;
+			children = (
+				E45C8EAF1FDB481800B6DC5E /* IncomesView.swift */,
+				E45C8EB31FDB508100B6DC5E /* NewIncome.swift */,
+				E43D42081FDD489E00CF5595 /* IncomesChart.swift */,
+				E417FA681FEA9F73003620E1 /* IncomePercentage.swift */,
+			);
+			path = Incomes;
+			sourceTree = "<group>";
+		};
+		E417FA6F1FEAC504003620E1 /* Outcomes */ = {
+			isa = PBXGroup;
+			children = (
+				E43C5A531FDC35CC00DF5863 /* OutcomesView.swift */,
+				E43C5A551FDC388A00DF5863 /* NewOutcome.swift */,
+				E43D420A1FDD48B200CF5595 /* OutcomesChart.swift */,
+				E417FA6A1FEAB17C003620E1 /* OutcomePercentage.swift */,
+			);
+			path = Outcomes;
+			sourceTree = "<group>";
+		};
+		E417FA701FEAC51B003620E1 /* Balance */ = {
+			isa = PBXGroup;
+			children = (
+				E43D420C1FDD48C500CF5595 /* BalanceChart.swift */,
+				E456E6691FE27E790024F7E3 /* SingleMonthView.swift */,
+			);
+			path = Balance;
+			sourceTree = "<group>";
+		};
+		E417FA711FEAC55F003620E1 /* Managment */ = {
+			isa = PBXGroup;
+			children = (
+				E4D7B9661FD8809600C6DDE4 /* AppDelegate.swift */,
+				3FB18AE81FE6DDCB00AA2057 /* LoginViewController.swift */,
+				E45C8EAD1FD93EB600B6DC5E /* ManagePlanner.swift */,
+				3F7596C31FDDB9BB0041CF36 /* PopUpViewController.swift */,
+				E45C8EB11FDB4AF400B6DC5E /* customCell.swift */,
+				3F8FD5A91FE83523009513ED /* Localizable.strings */,
+			);
+			path = Managment;
+			sourceTree = "<group>";
+		};
 		E4D7B95A1FD8809600C6DDE4 = {
 			isa = PBXGroup;
 			children = (
@@ -170,27 +214,15 @@
 		E4D7B9651FD8809600C6DDE4 /* Finance Planner */ = {
 			isa = PBXGroup;
 			children = (
-				E4D7B9661FD8809600C6DDE4 /* AppDelegate.swift */,
-				3FB18AE81FE6DDCB00AA2057 /* LoginViewController.swift */,
-				E45C8EAD1FD93EB600B6DC5E /* ManagePlanner.swift */,
-				3F7596C31FDDB9BB0041CF36 /* PopUpViewController.swift */,
-				E45C8EB11FDB4AF400B6DC5E /* customCell.swift */,
-				E45C8EAF1FDB481800B6DC5E /* IncomesView.swift */,
-				E45C8EB31FDB508100B6DC5E /* NewIncome.swift */,
-				E43C5A531FDC35CC00DF5863 /* OutcomesView.swift */,
-				E43C5A551FDC388A00DF5863 /* NewOutcome.swift */,
-				E43D42081FDD489E00CF5595 /* IncomesChart.swift */,
-				E43D420A1FDD48B200CF5595 /* OutcomesChart.swift */,
-				E43D420C1FDD48C500CF5595 /* BalanceChart.swift */,
-				E456E6691FE27E790024F7E3 /* SingleMonthView.swift */,
-				E417FA681FEA9F73003620E1 /* IncomePercentage.swift */,
-				E417FA6A1FEAB17C003620E1 /* OutcomePercentage.swift */,
 				E4D7B96A1FD8809600C6DDE4 /* Main.storyboard */,
-				3F8FD5A91FE83523009513ED /* Localizable.strings */,
-				E4D7B9701FD8809600C6DDE4 /* Assets.xcassets */,
 				E4D7B9721FD8809600C6DDE4 /* LaunchScreen.storyboard */,
 				E4D7B9751FD8809600C6DDE4 /* Info.plist */,
 				E4D7B96D1FD8809600C6DDE4 /* Finance_Planner.xcdatamodeld */,
+				E417FA711FEAC55F003620E1 /* Managment */,
+				E417FA701FEAC51B003620E1 /* Balance */,
+				E417FA6F1FEAC504003620E1 /* Outcomes */,
+				E417FA6E1FEAC4C6003620E1 /* Incomes */,
+				E4D7B9701FD8809600C6DDE4 /* Assets.xcassets */,
 			);
 			path = "Finance Planner";
 			sourceTree = "<group>";
