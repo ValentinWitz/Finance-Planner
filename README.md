@@ -8,8 +8,8 @@ by Valentin Witzeneder and Marko Bliznac
     - NSUserDefaults
     
 ### Additional APIs
-    - SmileLock [https://github.com/recruit-lifestyle/Smile-Lock]
-    - Charts
+    - [SmileLock](https://github.com/recruit-lifestyle/Smile-Lock)
+    - [Charts](https://github.com/danielgindi/Charts)
 
 ## Tested Devices
     - Simulator IPhone X
