@@ -8,7 +8,7 @@ by Valentin Witzeneder and Marko Bliznac
     - NSUserDefaults
     
 ### Additional APIs
-    - SmileLock
+    - SmileLock [https://github.com/recruit-lifestyle/Smile-Lock]
     - Charts
 
 ## Tested Devices
