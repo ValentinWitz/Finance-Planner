@@ -129,7 +129,7 @@ class SingleMonthView: UIViewController, UIPickerViewDataSource, UIPickerViewDel
         chartView.chartDescription?.text = ""
         chartView.xAxis.valueFormatter = IndexAxisValueFormatter(values: descriptions)
         chartView.xAxis.granularity = 1
-        chartView.animate(xAxisDuration: 2.0, yAxisDuration: 3.0, easingOption: .easeOutBounce)
+        chartView.animate(yAxisDuration: 3.0, easingOption: .easeOutBounce)
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {

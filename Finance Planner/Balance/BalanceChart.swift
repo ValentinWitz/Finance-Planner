@@ -280,7 +280,7 @@ class BalanceChart: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         balanceChart.chartDescription?.text = ""
         balanceChart.xAxis.valueFormatter = IndexAxisValueFormatter(values: reqMonths)
         balanceChart.xAxis.granularity = 1
-        balanceChart.animate(xAxisDuration: 2.0, yAxisDuration: 3.0, easingOption: .easeOutBounce)
+        balanceChart.animate(yAxisDuration: 3.0, easingOption: .easeOutBounce)
     }
     
     func getDataOutcomes() {
