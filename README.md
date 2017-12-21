@@ -4,12 +4,12 @@ by Valentin Witzeneder and Marko Bliznac
 ## Used APIs
 
 ### Mandatory APIs
-    - CoreData
-    - NSUserDefaults
+- CoreData
+- NSUserDefaults
     
 ### Additional APIs
-    - [SmileLock](https://github.com/recruit-lifestyle/Smile-Lock)
-    - [Charts](https://github.com/danielgindi/Charts)
+- [SmileLock](https://github.com/recruit-lifestyle/Smile-Lock)
+- [Charts](https://github.com/danielgindi/Charts)
 
 ## Tested Devices
     - Simulator IPhone X
